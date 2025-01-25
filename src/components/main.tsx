@@ -26,14 +26,43 @@ const experience = [
       end: "Present",
     },
     description:
-      "wegh4weg4egg",
+      "Mentored over 50+ students under SMP'24 and Worked on 2 projects under Crypt SIG",
     skills: [
       "JavaScript",
       "TypeScript",
       "React",
       "Next.js",
       "Material UI",
-      "Figma",
+    ],
+  },
+  {
+    title: "NLP Intern",
+    company: "HALE Lab NITK",
+    link: "halelabnitk.github.io",
+    location: "Mangalore, India",
+    date: {
+      start: "April 2024",
+      end: "July 2024",
+    },
+    description:
+      "Trained a Natural Language Processing (NLP) model to interpret chest X-ray images and generate radiology reports by fine-tuning BioClinicalBERT and BioMedCLIP hugging face transformers",
+    skills: [
+      "Natural Language Processing","PyTorch", "Python", "Streamlit"
+    ],
+  },
+  {
+    title: "Student Member",
+    company: "IEEE NITK",
+    link: "https://ieee.nitk.ac.in/",
+    location: "Mangalore, India",
+    date: {
+      start: "Nov 2022",
+      end: "July 2023",
+    },
+    description:
+      "Involved in a project that aims to simulate a Robotic arm using the Robot Operating System (ROS).",
+    skills: [
+      "PyTorch", "Tkinter", "ROS"
     ],
   },
 ];
@@ -43,7 +72,6 @@ const projects = [
     title: "Image Style Transfer",
     link: "#",
     thumbnail: tanitim,
-    wip: true,
     description:
       "wegeherherh",
     skills: [
