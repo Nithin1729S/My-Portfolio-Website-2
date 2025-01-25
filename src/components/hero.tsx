@@ -13,6 +13,7 @@ import GoneForGood from "@/assets/gone-for-good.svg";
 import GitHub from "@/assets/socials/github.svg";
 import LinkedIn from "@/assets/socials/linkedin.svg";
 import Mail from "@/assets/socials/mail.svg";
+import Leetcode from "@/assets/socials/leetcode.svg";
 
 import animationData from "@/assets/me.json";
 import increasePokeCounter from "@/app/action";
@@ -39,7 +40,7 @@ const socials: {
   },
   {
     name: "Leetcode",
-    icon: Mail,
+    icon: Leetcode,
     link: "https://leetcode.com/u/sureshnithin1729/",
   },
 ];
@@ -65,7 +66,6 @@ const dialogs = [
   "If I tell you my secret, will you stop?",
   "Is that what you want?",
   "Alright, take it and leave me be.",
-  "secret.yunusemre.dev",
   "How you like that?",
   "Now, leave me alone.",
   "You know, this is quite distracting.",
@@ -97,12 +97,6 @@ export default function Hero() {
   const [clicks, setClicks] = useState(0);
   const [dialog, setDialog] = useState(0);
   const [gone, setGone] = useState(false);
-
-  useEffect(() => {
-    console.log(
-      "Hey there! Looks like you found my secret. There you go, you deserve it: https://secret.yunusemre.dev/",
-    );
-  }, []);
 
   useEffect(() => {
     if (localStorage.getItem("angryYunus") === "true") setGone(true);

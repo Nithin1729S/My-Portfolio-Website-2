@@ -76,7 +76,6 @@ const projects = [
       "Next.js",
       "Tailwind",
       "Next UI",
-      "Framer Motion",
     ],
   },
 ];

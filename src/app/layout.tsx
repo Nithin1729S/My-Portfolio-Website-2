@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   title: "Nithin S",
   description:
     "Nithin S is a software engineer",
-  metadataBase: new URL("https://www.yunusemre.dev"),
+  metadataBase: new URL("https://www.youtube.com"),
   openGraph: {
     title: "Nithin S",
     description:
       "Nithin S is a software engineer ",
     type: "website",
-    url: "https://www.yunusemre.dev",
+    url: "https://www.nithin.dev",
   },
   icons: [
     {
@@ -40,7 +40,7 @@ const jsonLd: WithContext<Person> = {
   url: "#",
   jobTitle: "Software Engineer",
   birthDate: "2004-12-09",
-  image: "https://www.yunusemre.dev/assets/me.png",
+  image: "https://localhost/assets/me.png",
   description:
     "Nithin S is a software engineer",
 };
