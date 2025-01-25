@@ -7,10 +7,6 @@ import BlogPosts from "@/components/blog-posts";
 import { cn } from "@/lib/utils";
 
 import tanitim from "@/assets/projects/tanitim.png";
-import selfshelf from "@/assets/projects/selfshelf.png";
-import emogi from "@/assets/projects/emogi.png";
-import conversions from "@/assets/projects/conversions.png";
-
 import Arrow from "@/assets/icons/arrow.svg";
 import Chat from "@/components/chat";
 import ButtonGroup from "@/components/button-group";
