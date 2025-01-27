@@ -23,13 +23,7 @@ const experience = [
     },
     description:
       "Mentored over 50+ students under SMP'24 and Worked on 2 projects under Crypt SIG",
-    skills: [
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Material UI",
-    ],
+    skills: ["JavaScript", "TypeScript", "React", "Next.js", "Material UI"],
   },
   {
     title: "NLP Intern",
@@ -42,9 +36,7 @@ const experience = [
     },
     description:
       "Trained a Natural Language Processing (NLP) model to interpret chest X-ray images and generate radiology reports by fine-tuning BioClinicalBERT and BioMedCLIP hugging face transformers",
-    skills: [
-      "Natural Language Processing","PyTorch", "Python", "Streamlit"
-    ],
+    skills: ["Natural Language Processing", "PyTorch", "Python", "Streamlit"],
   },
   {
     title: "Student Member",
@@ -57,9 +49,31 @@ const experience = [
     },
     description:
       "Involved in a project that aims to simulate a Robotic arm using the Robot Operating System (ROS).",
-    skills: [
-      "PyTorch", "Tkinter", "ROS"
-    ],
+    skills: ["PyTorch", "Tkinter", "ROS"],
+  },
+];
+const education = [
+  {
+    title: "National Institute of Technology Karnataka",
+    company: "B.Tech in Information Technology",
+    link: "https://iste.nitk.ac.in/#/#/",
+    location: "Mangalore, India",
+    date: {
+      start: "Nov 2022",
+      end: "Aug 2026",
+    },
+    description: "Grade: 9.56/10.0",
+  },
+  {
+    title: "National Institute of Technology Karnataka",
+    company: "Minor in Machine Learning",
+    link: "halelabnitk.github.io",
+    location: "Mangalore, India",
+    date: {
+      start: "Aug 2023",
+      end: "Aug 2026",
+    },
+    description: "",
   },
 ];
 
@@ -68,15 +82,8 @@ const projects = [
     title: "Image Style Transfer",
     link: "#",
     thumbnail: tanitim,
-    description:
-      "wegeherherh",
-    skills: [
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Tailwind",
-      "Next UI",
-    ],
+    description: "wegeherherh",
+    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
   },
 ];
 
@@ -88,26 +95,26 @@ export default function Main() {
       <section id="about" className="mb-24 scroll-mt-16" aria-label="About me">
         <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
         <p className="mt-5 text-skeptic-900">
-          As a 3rd year undergraduate at the <strong>National Institute of Technology,
-          Karnataka</strong>, I&apos;m passionate about the ever-evolving world of technology.
-          Currently pursuing Bachelor&apos;s in Information Technology and minors in
+          As a 3rd year undergraduate at the{" "}
+          <strong>National Institute of Technology, Karnataka</strong>, I&apos;m
+          passionate about the ever-evolving world of technology. Currently
+          pursuing Bachelor&apos;s in Information Technology and minors in
           Machine Learning, I&apos;m on a journey to explore the endless
-          possibilities that technology offers. 
+          possibilities that technology offers.
         </p>
         <p className="mt-3 text-skeptic-900">
-          With a deep fascination for
-          emerging tech trends and their impact on our daily lives, I'm
-          dedicated to staying at the forefront of innovation and contributing
-          to the tech ecosystem. 
+          With a deep fascination for emerging tech trends and their impact on
+          our daily lives, I'm dedicated to staying at the forefront of
+          innovation and contributing to the tech ecosystem.
         </p>
         <p className="mt-3 text-skeptic-900">
-          I am proficient in C, C++ and Python with a
-          strong hold on Data Structures and Algorithms. My areas of interest
-          include Software Development, Machine Learning, Deep Learning, Data
-          Analytics, NLP, Blockchain and Database Management Systems. I am a
-          keen learner, handworker and a good problem solver with a strong work
-          ethic. I have done several projects in the field of Web Development,
-          Machine Learning, Deep Learning, NLP and Blockchain.
+          I am proficient in C, C++ and Python with a strong hold on Data
+          Structures and Algorithms. My areas of interest include Software
+          Development, Machine Learning, Deep Learning, Data Analytics, NLP,
+          Blockchain and Database Management Systems. I am a keen learner,
+          handworker and a good problem solver with a strong work ethic. I have
+          done several projects in the field of Web Development, Machine
+          Learning, Deep Learning, NLP and Blockchain.
         </p>
         <ButtonGroup />
       </section>
@@ -173,6 +180,52 @@ export default function Main() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section
+        id="education"
+        className="mb-24 scroll-mt-16"
+        aria-label="Education"
+      >
+        <h2 className="text-2xl font-bold tracking-tight">Education</h2>
+        <ul className="ml-1 mt-5 flex flex-col text-skeptic-900">
+          {education.map((exp, index) => (
+            <li
+              className={cn(
+                "relative ml-3 pl-5 before:absolute before:-left-2 before:top-2 before:h-full before:w-0.5 before:rounded-full before:bg-slate-300 before:content-[''] after:absolute after:-left-[0.93rem] after:top-1 after:size-4 after:rounded-full after:bg-slate-300 after:content-['']",
+                index !== education.length - 1 && "pb-10",
+                index === 0 && "after:bg-skeptic-700",
+                index === 1 && "after:bg-skeptic-700",
+              )}
+              key={index}
+            >
+              <div className="flex flex-col-reverse justify-between gap-y-2 sm:flex-row">
+                <h3 className="relative flex flex-col leading-snug">
+                  <span className="pb-1 text-lg font-bold leading-none tracking-tight">
+                    {exp.title}
+                  </span>
+                  {exp.company}
+                </h3>
+                <aside className="flex-shrink-0">
+                  <p
+                    aria-label={`Worked from ${exp.date.start} to ${exp.date.end}`}
+                    className="text-xs font-semibold text-skeptic-800 sm:text-end sm:text-sm"
+                  >
+                    {exp.date.start} &mdash; {exp.date.end}
+                  </p>
+                  <p
+                    aria-label={`Located in ${exp.location}`}
+                    className="text-xs text-skeptic-800 sm:text-end sm:text-sm"
+                  >
+                    {exp.location}
+                  </p>
+                </aside>
+              </div>
+              <div className="mt-3 text-skeptic-950">
+                <p className="text-sm">{exp.description}</p>
               </div>
             </li>
           ))}
@@ -249,6 +302,15 @@ export default function Main() {
             </li>
           ))}
         </ul>
+        <div className="mt-10 flex justify-center">
+          <Link
+            href="/projects"
+            className="group flex items-center text-sm font-semibold text-skeptic-900 hover:text-skeptic-700"
+          >
+            Show More
+            <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+          </Link>
+        </div>
       </section>
 
       <section

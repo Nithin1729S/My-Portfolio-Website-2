@@ -183,6 +183,9 @@ export default function Hero() {
               <Link href={"#about"}>About</Link>
             </li>
             <li className="text-skeptic-900 transition-all hover:translate-x-2 hover:text-skeptic-700">
+              <Link href={"#about"}>Education</Link>
+            </li>
+            <li className="text-skeptic-900 transition-all hover:translate-x-2 hover:text-skeptic-700">
               <Link href={"#experience"}>Experience</Link>
             </li>
             <li className="text-skeptic-900 transition-all hover:translate-x-2 hover:text-skeptic-700">
