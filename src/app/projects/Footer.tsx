@@ -17,8 +17,6 @@ const Footer = () => {
           <span className="font-medium text-xl text-customBlue">Nithin S</span>
           <a
             href="/"
-            target="_blank"
-            rel="noreferrer noopener"
             className="text-base flex gap-x-1 hover:gap-x-2 transition-all items-center font-light underline text-customBlue"
           >
             <span>Visit my portfolio</span>
@@ -27,7 +25,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="gap-x-4 flex">
-        <a href="https://github.com/yuunsgit" target="_blank" rel="noreferrer noopener">
+        <a href="https://github.com/Nithin1729S" target="_blank" rel="noreferrer noopener">
           <Image
             src="/assets/socials/github.svg"
             alt="GitHub"
@@ -36,7 +34,7 @@ const Footer = () => {
             className="h-6 w-6 hover:rotate-6 grayscale hover:grayscale-0 transition-all"
           />
         </a>
-        <a href="https://www.linkedin.com/in/yekepenek/" target="_blank" rel="noreferrer noopener">
+        <a href="https://www.linkedin.com/in/nithin1729s/" target="_blank" rel="noreferrer noopener">
           <Image
             src="/assets/socials/linkedin.svg"
             alt="LinkedIn"
@@ -45,7 +43,7 @@ const Footer = () => {
             className="h-6 w-6 hover:rotate-6 grayscale hover:grayscale-0 transition-all"
           />
         </a>
-        <a href="/rss.xml" target="_blank" rel="noreferrer noopener">
+        <a href="mailto:sureshnithin1729@gmail.com" target="_blank" rel="noreferrer noopener">
           <Image
             src="/assets/socials/mail.svg"
             alt="RSS Feed"

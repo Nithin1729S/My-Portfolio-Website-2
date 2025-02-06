@@ -17,9 +17,7 @@ const ProjectsHeader = () => {
           <span className="text-base text-customBlue">
             by{" "}
             <a
-              href="https://www.yunusemre.dev"
-              rel="noopener noreferrer"
-              target="_blank"
+              href="/"
               className="underline transition-colors text-customBlue"
             >
               Nithin S

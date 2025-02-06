@@ -86,6 +86,70 @@ const projects = [
     skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
     wip: false,
   },
+  {
+    title: "Image Style Transfer",
+    link: "#",
+    thumbnail: tanitim,
+    description: "wegeherherh",
+    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    wip: false,
+  },
+  {
+    title: "Image Style Transfer",
+    link: "#",
+    thumbnail: tanitim,
+    description: "wegeherherh",
+    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    wip: false,
+  },
+  {
+    title: "Image Style Transfer",
+    link: "#",
+    thumbnail: tanitim,
+    description: "wegeherherh",
+    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    wip: false,
+  },
+  {
+    title: "Image Style Transfer",
+    link: "#",
+    thumbnail: tanitim,
+    description: "wegeherherh",
+    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    wip: false,
+  },
+  {
+    title: "Image Style Transfer",
+    link: "#",
+    thumbnail: tanitim,
+    description: "wegeherherh",
+    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    wip: false,
+  },
+  {
+    title: "Image Style Transfer",
+    link: "#",
+    thumbnail: tanitim,
+    description: "wegeherherh",
+    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    wip: false,
+  },
+  {
+    title: "Image Style Transfer",
+    link: "#",
+    thumbnail: tanitim,
+    description: "wegeherherh",
+    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    wip: false,
+  },
+  {
+    title: "Image Style Transfer",
+    link: "#",
+    thumbnail: tanitim,
+    description: "wegeherherh",
+    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    wip: false,
+  },
 ];
 
 export default function Main() {
@@ -242,7 +306,7 @@ export default function Main() {
           Some Things I&apos;ve Built
         </h2>
         <ul className="mt-8 flex flex-col gap-14 text-skeptic-900">
-          {projects.map((project) => (
+          {projects.slice(0,4).map((project) => (
             <li
               className="group relative z-0 flex flex-col gap-4 sm:flex-row"
               key={project.title}
