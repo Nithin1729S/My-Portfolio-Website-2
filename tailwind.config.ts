@@ -38,8 +38,8 @@ const config = {
           "800": "#2b4877",
           "900": "#243a5e",
           "950": "#102032"
-        }
-        ,
+        },
+        customBlue:"#2b4877",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
