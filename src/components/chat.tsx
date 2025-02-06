@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input";
 
 import Plane from "@/assets/icons/plane.svg";
 import { z } from "zod";
-import { useAssistant } from "ai/react";
 
 import Loading from "@/assets/icons/loading.svg";
 import XMark from "@/assets/icons/x-mark.svg";
@@ -47,31 +46,23 @@ const messageSchema = z
   .max(80)
   .regex(/.*[^ ].*/);
 
+type Message = {
+  id: number;
+  role: "user" | "assistant";
+  content: string;
+};
+
 export default function Chat() {
   const { chatOpen, setChatOpen } = useContext(ChatContext);
-
   const scrollBottomAnchor = useRef<HTMLDivElement>(null);
-  const [rateLimited, setRateLimited] = useState(false);
-  const [ip, setIp] = useState("1.1.1.1");
 
-  const {
-    status,
-    messages,
-    input,
-    submitMessage,
-    handleInputChange,
-    error,
-    append,
-    setInput,
-  } = useAssistant({
-    api: "/api/assistant",
-    body: {
-      ip,
-    },
-  });
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
+  // Scroll to bottom when messages update
   const scrollToBottom = () => {
-    if (scrollBottomAnchor?.current) {
+    if (scrollBottomAnchor.current) {
       scrollBottomAnchor.current.scrollTo({
         top: scrollBottomAnchor.current.scrollHeight,
       });
@@ -79,28 +70,36 @@ export default function Chat() {
   };
 
   useEffect(() => {
-    fetch("https://freeipapi.com/api/json")
-      .then((res) => res.json())
-      .then((loc) => setIp(loc.ipAddress));
-  }, []);
-
-  useEffect(() => {
     scrollToBottom();
   }, [messages]);
 
-  useEffect(() => {
-    if (
-      (error as { message: string })?.message &&
-      (error as { message: string }).message.includes("rateLimit") &&
-      !rateLimited
-    ) {
-      setRateLimited(true);
-      append({
+  const submitMessage = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!messageSchema.safeParse(input).success) return;
+
+    // Create a user message object and add it to state
+    const userMessage: Message = {
+      id: Date.now(),
+      role: "user",
+      content: input,
+    };
+
+    setMessages((prev) => [...prev, userMessage]);
+    setInput("");
+    setIsLoading(true);
+
+    // Simulate an assistant response after 1 second
+    setTimeout(() => {
+      const assistantMessage: Message = {
+        id: Date.now() + 1,
         role: "assistant",
-        content: "I think we talked too much today. Let's continue tomorrow.",
-      });
-    }
-  }, [error]);
+        content: `This is a dummy response to: "${userMessage.content}"`,
+      };
+      setMessages((prev) => [...prev, assistantMessage]);
+      setIsLoading(false);
+    }, 1000);
+  };
 
   return (
     <AnimatePresence>
@@ -108,7 +107,7 @@ export default function Chat() {
         <motion.section
           id="chat"
           className="relative z-0 scroll-mt-16 overflow-visible before:absolute before:-inset-6 before:top-0 before:-z-10 before:rounded-3xl before:bg-slate-200 before:content-['']"
-          aria-label="Yunus Emre AI clone"
+          aria-label="Dummy Chat App"
           initial={{ opacity: 0, height: 0, marginBottom: 0 }}
           animate={{
             opacity: 1,
@@ -131,16 +130,20 @@ export default function Chat() {
             >
               <XMark className="size-4" aria-hidden="true" />
             </Button>
+
             <div
               ref={scrollBottomAnchor}
               className="chatbox scrolling-touch scrolling-gpu relative mr-auto h-96 w-full space-y-4 overflow-y-auto overscroll-auto direction-reverse md:h-72"
             >
               <div className="sticky top-0 h-12 w-full" aria-hidden="true" />
+
+              {/* Initial assistant greeting */}
               <div className="mr-auto w-10/12 max-w-fit rounded-2xl rounded-tl-none bg-skeptic-400 px-5 py-2.5 transition-all">
                 <p className="text-sm font-medium text-white">
                   Hey! What would you like to learn about me?
                 </p>
               </div>
+
               {messages.map((message) => {
                 if (message.role === "user") {
                   return (
@@ -159,29 +162,17 @@ export default function Chat() {
                       className="mr-auto w-11/12 max-w-fit rounded-2xl rounded-tl-none bg-skeptic-400 px-5 py-2.5 transition-all"
                       key={message.id}
                     >
-                      <p
-                        className="whitespace-pre-line text-sm font-medium text-white"
-                        dangerouslySetInnerHTML={{
-                          __html: message.content
-                            .replace(/ *【.*】 */g, "")
-                            .replace(/ *\[.*] */g, "")
-                            .replace(/\.{2,}/g, ".")
-                            .replace(" .", ".")
-                            .replace(
-                              /(\b(https?|ftp|file):\/\/([-A-Z0-9+&@#%?=~_|!:,.;]*)([-A-Z0-9+&@#%?\/=~_|!:,.;]*)[-A-Z0-9+&@#\/%=~_|])/gi,
-                              "<a href='$1' target='_blank' rel='noopener noreferrer' class='bg-skeptic-100 rounded-lg px-2 text-skeptic-900 hover:bg-skeptic-200 mx-1 transition-all'>$3</a>",
-                            ),
-                        }}
-                      ></p>
+                      <p className="whitespace-pre-line text-sm font-medium text-white">
+                        {message.content}
+                      </p>
                     </div>
                   );
                 }
               })}
-              {status === "in_progress" &&
-                messages[messages.length - 1]?.role === "user" && (
-                  <Loading className="ml-4 size-10" />
-                )}
+
+              {isLoading && <Loading className="ml-4 size-10" />}
             </div>
+
             <ul
               className="questions mt-8 flex gap-1 overflow-x-auto overflow-y-visible"
               aria-label="Premade questions"
@@ -192,9 +183,7 @@ export default function Chat() {
                     size="sm"
                     variant="outline"
                     className="h-7 text-xs text-skeptic-900"
-                    onClick={() => {
-                      setInput(q.question);
-                    }}
+                    onClick={() => setInput(q.question)}
                     aria-label={`Ask ${q.buttonName}`}
                   >
                     {q.buttonName}
@@ -202,29 +191,22 @@ export default function Chat() {
                 </li>
               ))}
             </ul>
-            <form
-              className="mt-2 flex gap-2"
-              onSubmit={(e) => {
-                e.preventDefault();
-                if (messageSchema.safeParse(input).success) submitMessage();
-              }}
-            >
+
+            <form className="mt-2 flex gap-2" onSubmit={submitMessage}>
               <Input
                 value={input}
                 onChange={(event) =>
-                  event.target.value.length < 80 && handleInputChange(event)
+                  event.target.value.length < 80 && setInput(event.target.value)
                 }
                 className="border-2 text-skeptic-900 !ring-skeptic-600"
                 placeholder="Ask a question"
-                disabled={rateLimited || !!error}
+                disabled={isLoading}
               />
               <Button
                 className="bg-skeptic-500 !ring-skeptic-600 hover:bg-skeptic-400"
                 type="submit"
                 size="icon"
-                disabled={
-                  !input || rateLimited || !!error || status === "in_progress"
-                }
+                disabled={!input || isLoading}
                 aria-label="Send message"
               >
                 <Plane className="size-5" aria-hidden="true" />
