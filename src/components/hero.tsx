@@ -104,17 +104,21 @@ export default function Hero() {
 
   useEffect(() => {
     if (clicks >= CLICKS_TO_DIALOG && !gone) {
-      setDialog((prev) => prev + 1);
-      setTimeout(() => {
-        if (dialog === dialogs.length - 2) {
-          setGone(true);
-          localStorage.setItem("angryYunus", "true");
-          return;
-        }
-        setClicks(0);
-      }, 2000);
+      // Use a functional update so we can capture the new dialog value immediately
+      setDialog((prev) => {
+        const newDialog = prev + 1;
+        setTimeout(() => {
+          if (newDialog === dialogs.length - 2) {
+            setGone(true);
+            localStorage.setItem("angryYunus", "true");
+          } else {
+            setClicks(0);
+          }
+        }, 2000);
+        return newDialog;
+      });
     }
-  }, [clicks]);
+  }, [clicks, gone]);
 
   return (
     <header className="flex flex-shrink-0 flex-col justify-between pb-0 pt-10 md:pt-16 lg:sticky lg:top-0 lg:max-h-screen lg:pb-16">
@@ -167,12 +171,8 @@ export default function Hero() {
           </figure>
         </div>
         <div className="mt-10 text-skeptic-800">
-          <h1 className="text-3xl font-bold tracking-tight">
-            Nithin S
-          </h1>
-          <h2 className="mt-1 text-xl tracking-tight">
-            Software Engineer
-          </h2>
+          <h1 className="text-3xl font-bold tracking-tight">Nithin S</h1>
+          <h2 className="mt-1 text-xl tracking-tight">Software Engineer</h2>
         </div>
         <nav
           className="mt-10 hidden lg:block"
@@ -201,7 +201,12 @@ export default function Hero() {
       <ul className="mt-6 flex gap-4" aria-label="Social media links">
         {socials.map((social, index) => (
           <li key={index}>
-            <Link href={social.link} target="_blank" rel="noreferrer noopener" aria-label={`Follow on ${social.name}`}>
+            <Link
+              href={social.link}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label={`Follow on ${social.name}`}
+            >
               <social.icon className="size-6 fill-skeptic-800 hover:fill-skeptic-600" />
             </Link>
           </li>
