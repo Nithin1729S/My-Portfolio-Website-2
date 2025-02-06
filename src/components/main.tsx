@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import BlogPosts from "@/components/blog-posts";
 import { cn } from "@/lib/utils";
 
 import tanitim from "@/assets/projects/tanitim.png";
@@ -84,6 +83,7 @@ const projects = [
     thumbnail: tanitim,
     description: "wegeherherh",
     skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    wip: false,
   },
 ];
 
@@ -104,7 +104,7 @@ export default function Main() {
         </p>
         <p className="mt-3 text-skeptic-900">
           With a deep fascination for emerging tech trends and their impact on
-          our daily lives, I'm dedicated to staying at the forefront of
+          our daily lives, I&apos;m dedicated to staying at the forefront of
           innovation and contributing to the tech ecosystem.
         </p>
         <p className="mt-3 text-skeptic-900">
@@ -318,7 +318,6 @@ export default function Main() {
         className="mb-24 scroll-mt-16"
         aria-label="Recent blog posts"
       >
-        <BlogPosts />
       </section>
 
       <footer className="flex flex-col items-start justify-between gap-y-6 sm:flex-row sm:items-end">
