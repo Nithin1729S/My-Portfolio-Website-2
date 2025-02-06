@@ -41,11 +41,15 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@eslint/config-array": "^0.19.2",
+    "@eslint/object-schema": "^2.1.6",
     "@svgr/webpack": "^8.1.0",
     "autoprefixer": "^10.4.16",
+    "glob": "^11.0.1",
     "postcss": "^8.4.31",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.3.5"
   },
   "prettier": {
