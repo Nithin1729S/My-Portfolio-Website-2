@@ -1,3 +1,4 @@
+"use client";
 export default function NotFound() {
   return (
     <div className="flex h-[100vh] w-[100vw] items-center justify-center px-4 py-8 lg:px-6 lg:py-16">
