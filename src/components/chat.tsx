@@ -52,6 +52,17 @@ type Message = {
   content: string;
 };
 
+// Resume-based responses mapped to the corresponding premade questions
+const responses: Record<string, string> = {
+  "who are you?": `I'm Nithin S, a B.Tech student in Information Technology with a minor in Machine Learning at the National Institute of Technology Karnataka, Surathkal. I have a strong foundation in programming, algorithms, and full-stack development.`,
+  "what's your favorite programming language?": `I enjoy working with multiple languages, including C/C++, Python, Java, and JavaScript. Python stands out for its versatility, especially in Machine Learning projects, while C/C++ is great for competitive programming.`,
+  "tell me about your work experience.": `I am currently a Research Intern at the Healthcare Analytics & Language Engineering Lab under Dr. Sowmya Kamath S. My work involves training NLP models like BioClinicalBERT and BioMedCLIP to generate radiology reports from chest X-rays.`,
+  "tell me about your projects.": `I've completed a range of projects such as AesPA-Net for image style transfer using CNNs, a Web3 Vault DApp for decentralized password management, AniTalk—an anime discussion forum built with Django, and Pixel Plate, a MERN stack food ordering app with real-time updates.`,
+  "tell me about your current position.": `In my current role as a Research Intern, I focus on training and fine-tuning NLP models to interpret chest X-ray images and generate detailed radiology reports, achieving notable performance metrics.`,
+  "do you have certifications?": `Yes, I hold certifications in Data Structures & Algorithms (Abdul Bari), Machine Learning (Andrew Ng), Java Programming (Abdul Bari), and Full Stack Web Development (Udemy).`,
+  "hi": `Hi, there`,
+};
+
 export default function Chat() {
   const { chatOpen, setChatOpen } = useContext(ChatContext);
   const scrollBottomAnchor = useRef<HTMLDivElement>(null);
@@ -75,31 +86,35 @@ export default function Chat() {
 
   const submitMessage = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+  
     if (!messageSchema.safeParse(input).success) return;
-
+  
+    const lowercaseInput = input.toLowerCase().trim(); // Convert input to lowercase
+  
     // Create a user message object and add it to state
     const userMessage: Message = {
       id: Date.now(),
       role: "user",
-      content: input,
+      content: input, // Keep original case for UI display
     };
-
+  
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setIsLoading(true);
-
-    // Simulate an assistant response after 1 second
+  
+    // After 1 second, simulate an assistant response using resume content
     setTimeout(() => {
       const assistantMessage: Message = {
         id: Date.now() + 1,
         role: "assistant",
-        content: `This is a dummy response to: "${userMessage.content}"`,
+        content:
+          responses[lowercaseInput] || "I'm sorry, I don't have information on that.",
       };
       setMessages((prev) => [...prev, assistantMessage]);
       setIsLoading(false);
     }, 1000);
   };
+  
 
   return (
     <AnimatePresence>
