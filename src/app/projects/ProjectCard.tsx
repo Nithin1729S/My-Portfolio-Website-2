@@ -25,13 +25,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <li className="group relative z-0 flex flex-col gap-4 sm:flex-row">
       <div
-        className="absolute inset-0 -z-10 hidden rounded-md transition-all motion-reduce:transition-none lg:block lg:group-hover:-inset-5 lg:group-hover:bg-gray-200"
+        className="absolute inset-0 -z-10 hidden rounded-3xl transition-all duration-300 ease-in-out motion-reduce:transition-none lg:block lg:group-hover:-inset-5 lg:group-hover:bg-skeptic-200"
         aria-hidden="true"
       />
       <div className="relative size-fit flex-shrink-0 rounded">
         {wip && (
           <div
-            className="absolute inset-0 z-10 flex size-full items-center justify-center rounded bg-opacity-50 bg-black/50 text-xl font-bold tracking-wider text-gray-50 transition-all lg:group-hover:opacity-0"
+           className="absolute inset-0 z-10 flex size-full items-center justify-center rounded bg-opacity-50 bg-wip-overlay text-xl font-bold tracking-wider text-skeptic-50 transition-all lg:group-hover:opacity-0"
             aria-label="Work in progress"
           >
             &mdash; WIP &mdash;
@@ -43,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           width={140}
           height={90} // Add required height property
           quality={100}
-          className="relative rounded border border-gray-400"
+          className="relative rounded border border-skeptic-400"
         />
       </div>
       <div>
@@ -52,7 +52,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={link}
             target="_blank"
             rel="noreferrer noopener"
-            className="relative inline-block"
+            // className="relative inline-block"
           >
             <span>{title}</span>
             <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[4px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -71,7 +71,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           >
             {skills.map((skill) => (
               <li
-                className="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-50"
+                className="rounded-full bg-skeptic-700 px-3 py-1 text-xs text-skeptic-50"
                 key={skill}
               >
                 {skill}

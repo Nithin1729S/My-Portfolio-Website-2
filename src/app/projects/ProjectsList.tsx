@@ -46,9 +46,9 @@ const projects = [
 
   const ProjectsList = () => {
     return (
-      <div className="max-w-3xl mx-auto px-4 py-6">
+      <div className="max-w-2xl mx-auto px-4 py-6">
         <div className="h-[calc(100vh-400px)] overflow-y-auto scrollbar-hide">
-          <ul className="mt-8 flex flex-col gap-14 text-gray-900">
+          <ul className="mt-4 ml-4 mr-4 mb-4 flex flex-col items-center gap-14 text-gray-900">
             {projects.map((project) => (
               <ProjectCard 
                 key={project.title}

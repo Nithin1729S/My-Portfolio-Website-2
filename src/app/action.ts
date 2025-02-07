@@ -1,12 +1,6 @@
-"use server";
-
-import { Redis } from "@upstash/redis";
-
-const redis = new Redis({
-  url: process.env["UPSTASH_REDIS_REST_URL"],
-  token: process.env["UPSTASH_REDIS_REST_TOKEN"],
-});
-
 export default async function increasePokeCounter() {
-  return await redis.incr("pokeCounter");
+  if (typeof window !== "undefined") {
+    let count = parseInt(localStorage.getItem("pokeCounter") || "0", 10);
+    localStorage.setItem("pokeCounter", (count + 1).toString());
+  }
 }
