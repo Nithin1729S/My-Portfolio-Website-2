@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   wip = false 
 }) => {
   return (
-    <li className="group relative z-0 flex flex-col gap-4 sm:flex-row">
+    <li className="group relative z-0 flex flex-col gap-4 sm:flex-row mt-3 ">
       <div
         className="absolute inset-0 -z-10 hidden rounded-3xl transition-all  motion-reduce:transition-none lg:block lg:group-hover:-inset-5 lg:group-hover:bg-skeptic-200"
         aria-hidden="true"

@@ -6,7 +6,10 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 
-import tanitim from "@/assets/projects/tanitim.png";
+import imageStyleTransfer from "@/assets/projects/imageStyleTransfer.png";
+import airesume from "@/assets/projects/ai-resume.png";
+import sudoku from "@/assets/projects/sudoku.png";
+import ds from "@/assets/projects/ds.png";
 import Arrow from "@/assets/icons/arrow.svg";
 import Chat from "@/components/chat";
 import ButtonGroup from "@/components/button-group";
@@ -79,75 +82,35 @@ const education = [
 
 const projects = [
   {
-    title: "Image Style Transfer",
-    link: "#",
-    thumbnail: tanitim,
-    description: "wegeherherh",
-    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    title: "Image Style Transfer Using CNNs",
+    link: "https://github.com/Nithin1729S/Image-Style-Transfer-Using-CNNs.git",
+    thumbnail: imageStyleTransfer,
+    description: "A Flask application that uses neural style transfer to blend content and style images effortlessly",
+    skills: ["Pytorch", "CNN", "Flask", "Python"],
     wip: false,
   },
   {
-    title: "Image Style Transfer",
-    link: "#",
-    thumbnail: tanitim,
-    description: "wegeherherh",
-    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    title: "AI Resume Insights",
+    link: "https://github.com/Nithin1729S/AI-Resume-Insights",
+    thumbnail: airesume,
+    description: "An AI-driven resume feedback system built with Langchain and Gemini API.",
+    skills: ["Langchain", "Gemini API", "Next.js", "Django"],
     wip: false,
   },
   {
-    title: "Image Style Transfer",
-    link: "#",
-    thumbnail: tanitim,
-    description: "wegeherherh",
-    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    title: "Neuro Sudoku",
+    link: "https://github.com/Nithin1729S/Neuro-Sudoku",
+    thumbnail: sudoku,
+    description: "A full-stack web application for real-time Sudoku solving.",
+    skills: ["ViT", "Next.js", "FastAPI", "TypeScript"],
     wip: false,
   },
   {
-    title: "Image Style Transfer",
-    link: "#",
-    thumbnail: tanitim,
-    description: "wegeherherh",
-    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
-    wip: false,
-  },
-  {
-    title: "Image Style Transfer",
-    link: "#",
-    thumbnail: tanitim,
-    description: "wegeherherh",
-    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
-    wip: false,
-  },
-  {
-    title: "Image Style Transfer",
-    link: "#",
-    thumbnail: tanitim,
-    description: "wegeherherh",
-    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
-    wip: false,
-  },
-  {
-    title: "Image Style Transfer",
-    link: "#",
-    thumbnail: tanitim,
-    description: "wegeherherh",
-    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
-    wip: false,
-  },
-  {
-    title: "Image Style Transfer",
-    link: "#",
-    thumbnail: tanitim,
-    description: "wegeherherh",
-    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
-    wip: false,
-  },
-  {
-    title: "Image Style Transfer",
-    link: "#",
-    thumbnail: tanitim,
-    description: "wegeherherh",
-    skills: ["TypeScript", "React", "Next.js", "Tailwind", "Next UI"],
+    title: "Distributed P2P Database",
+    link: "https://github.com/Nithin1729S/Distributed-DB",
+    thumbnail: ds,
+    description: "This project is a distributed file storage system implemented in Go.",
+    skills: ["Golang", "TCP", "AES-CTR", "CAS"],
     wip: false,
   },
 ];

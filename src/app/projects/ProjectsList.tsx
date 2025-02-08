@@ -1,47 +1,191 @@
 "use client";
-import Image from "next/image";
 import ProjectCard from "./ProjectCard";
 const projects = [
     {
+      title: "Image Style Transfer Using CNNs",
+      description: "A Flask application that uses neural style transfer to blend content and style images effortlessly",
+      thumbnail: "/assets/projects/imageStyleTransfer.png",
+      link: "https://github.com/Nithin1729S/Image-Style-Transfer-Using-CNNs.git",
+      skills: ["Pytorch", "CNN", "Flask", "Python"],
+      wip: false
+    },
+    {
       title: "AI Resume Insights",
-      description: "An AI-driven resume feedback system built with Langchain and Gemini API. The system analyzes resumes and provides detailed feedback on content, structure, and formatting to help job seekers improve their applications.",
-      thumbnail: "/assets/projects/tanitim.png",
-      link: "https://your-project-link.com",
-      skills: ["Langchain", "Gemini API", "Next.js", "AI"],
+      description: "An AI-driven resume feedback system built with Langchain and Gemini API.",
+      thumbnail: "/assets/projects/ai-resume.png",
+      link: "https://github.com/Nithin1729S/AI-Resume-Insights",
+      skills: ["Langchain", "Gemini", "Next.js", "Django", "TypeScript"],
       wip: false
     },
     {
-      title: "Sudoku Solver",
-      description: "A FastAPI-Next.js project that extracts Sudoku puzzles from images and solves them using computer vision and backtracking algorithms. Upload a photo of any Sudoku puzzle and get the solution instantly.",
-      thumbnail: "/assets/projects/tanitim.png",
-      link: "https://your-sudoku-solver.com",
-      skills: ["FastAPI", "Next.js", "Computer Vision", "Algorithms"],
-      wip: true
-    },
-    {
-      title: "Word Finder",
-      description: "A Go + Next.js application to find possible words based on letter constraints. Perfect for word games and puzzles, this tool helps you discover valid words that match your specific criteria.",
-      thumbnail: "/assets/projects/tanitim.png",
-      link: "https://your-word-finder.com",
-      skills: ["Go", "Next.js", "Word Games", "Algorithms"],
+      title: "Neuro Sudoku",
+      description: "A full-stack web application for real-time Sudoku solving. Users upload an image of a Sudoku puzzle, the application extracts and recognizes the digits using a Vision Transformer (ViT) model",
+      thumbnail: "/assets/projects/sudoku.png",
+      link: "https://github.com/Nithin1729S/Neuro-Sudoku",
+      skills: ["ViT", "Next.js", "FastAPI", "TypeScript"],
       wip: false
     },
     {
-      title: "Portfolio Analytics",
-      description: "A real-time dashboard for tracking portfolio performance across multiple asset classes. Built with Next.js and D3.js, featuring interactive charts and automated reporting.",
-      thumbnail: "/assets/projects/tanitim.png",
-      link: "https://your-analytics.com",
-      skills: ["Next.js", "D3.js", "Financial Analytics", "Real-time Data"],
+      title: "Distributed P2P Database",
+      description: "This project is a distributed file storage system implemented in Go. It combines a content-addressable storage (CAS) design with a peer-to-peer (P2P) networking layer to enable decentralized file storage and retrieval. Files are encrypted using AES-CTR mode before being transmitted over the network, ensuring end-to-end security.",
+      thumbnail: "/assets/projects/ds.png",
+      link: "https://github.com/Nithin1729S/Distributed-DB",
+      skills:["Golang", "TCP", "AES-CTR", "CAS"],
       wip: false
     },
     {
-      title: "Recipe Manager",
-      description: "A full-stack application for managing and sharing recipes. Features include ingredient scaling, meal planning, and automatic grocery list generation.",
-      thumbnail: "/assets/projects/tanitim.png",
-      link: "https://your-recipe-app.com",
-      skills: ["Full-stack", "Next.js", "Meal Planning", "Recipe Management"],
+      title: "Wordle Helper",
+      description: "A Wordle Helper built with Go and Next.js/TypeScript that uses present and absent words to predict possible solutions using an underlying backtracking algorithm.",
+      thumbnail: "/assets/projects/wordle.png",
+      link: "https://github.com/Nithin1729S/Wordle-Helper",
+      skills: ["Next.js", "Go", "TypeScript", "TailwindCSS"],
       wip: false
-    }
+    },
+    {
+      title: "Web3 Vault Dapp",
+      description: "A Decentralized Password Manager compiled in Remix IDE , deployed on Ethereum BlockChain (Sepolia TestNet).",
+      thumbnail: "/assets/projects/web3.png",
+      link: "https://github.com/Nithin1729S/Web3-Vault-dApp",
+      skills: ["Solidity", "ReactJS", "JavaScript"],
+      wip: false
+    },
+    {
+      title: "X Dapp",
+      description: "A Decentralized X Application compiled in Remix IDE , deployed on Ethereum BlockChain (Sepolia TestNet) ",
+      thumbnail: "/assets/projects/xdapp.png",
+      link: "https://github.com/Nithin1729S/X_dApp",
+      skills: ["Solidity", "ReactJS", "JavaScript"],
+      wip: false
+    },
+    {
+      title: "Anitalk",
+      description: "An Anime Forums Web App that lets users create forums ans discuss about anime , with Django backend, REST API, PostgreSQL database, and Vercel hosting.",
+      thumbnail: "/assets/projects/anitalk.png",
+      link: "https://github.com/Nithin1729S/AniTalk",
+      skills: ["Django", "Python", "PostgreSQL"],
+      wip: false
+    },
+    {
+      title: "Pixel Plate",
+      description: "A Full Stack Food Ordering Web Application built using the MERN stack and TypeScript allows users to order food and manage their restaurants.",
+      thumbnail: "/assets/projects/pixel.png",
+      link: "https://github.com/Nithin1729S/Pixel-Plate",
+      skills: ["ReactJS","TypeScript","TailwindCSS","MongoDB"],
+      wip: false
+    },
+    {
+      title: "Inkwell Insights : A Blogging-Website",
+      description: "A Full-stack blog application built using the MERN (MongoDB, Express.js, React, Node.js) stack. The frontend is styled using Tailwind CSS with the Flowbite theme.",
+      thumbnail: "/assets/projects/blog.png",
+      link: "https://github.com/Nithin1729S/Inkwell-Insights-A-Blogging-Website",
+      skills: ["ReactJS","JavaScript","TailwindCSS","MongoDB"],
+      wip: false
+    },
+    {
+      title: "My Portfolio Website",
+      description: "My Old  Minimalistic Portfolio Website built using ReactJS and TailwindCSS.",
+      thumbnail: "/assets/projects/portfolio.png",
+      link: "https://nithins.vercel.app/",
+      skills: ["ReactJS","JavaScript","TailwindCSS"],
+      wip: false
+    },
+    {
+      title: "Deep Dive - System Resource Monitor",
+      description: "A System resource monitoring tool leveraging Python libraries like Psutil, os, PyCPUInfo, Disto and Qt GUI interface for comprehensive real-time tracking and analysis of system resources",
+      thumbnail: "/assets/projects/deep.png",
+      link: "https://github.com/Nithin1729S/Deep-Dive-A-System-Resource-Monitor",
+      skills: ["Python","PyQt5","Psutil"],
+      wip: false
+    },
+    {
+      title: "C Compiler Phases",
+      description: "C Compiler built from scratch using  Lex, Yacc and Python covering all 6 phases on compilation.",
+      thumbnail: "/assets/projects/compiler.png",
+      link: "https://github.com/Nithin1729S/C-Compiler-Phases",
+      skills: ["Lex","Yacc","Python"],
+      wip: false
+    },
+    {
+      title: "Image Caption Generator",
+      description: "This project utilizes the Hugging Face Transformers library to create an image captioning application. It loads a pre-trained Vision Encoder-Decoder model and ViT (Vision Transformer) Image Processor to generate captions for uploaded images.",
+      thumbnail: "/assets/projects/imageCaption.png",
+      link: "https://github.com/Nithin1729S/Image-Caption-Generator",
+      skills: ["ViT","Python","Streamlit"],
+      wip: false
+    },
+    {
+      title: "Visual Hand Gesture Recognition",
+      description: "This project aims to recognize American Sign Language (ASL) gestures in real-time using Python, OpenCV, and MediaPipe.",
+      thumbnail: "/assets/projects/hand.png",
+      link: "https://github.com/Nithin1729S/Visual-Hand-Gesture-Recognition",
+      skills: ["Python","Mediapipe","OpenCV"],
+      wip: false
+    },
+    {
+      title: "Brain Tumor Classification",
+      description: "This project is a Brain Tumour Classifier built using TensorFlow Lite and Streamlit. It allows users to upload MRI scans to determine the type of brain tumour present.",
+      thumbnail: "/assets/projects/brain.png",
+      link: "https://github.com/Nithin1729S/Brain-Tumor-Classification",
+      skills: ["Python","Tensorflow","Streamlit"],
+      wip: false
+    },
+    {
+      title: "Medical Assistant",
+      description: "A web application that allows users to get consultations on Heart Diseases, Skin Cancer, and Tuberculosis by uploading images of Chest X-rays and skin lesions or providing surveys on life and health conditions.",
+      thumbnail: "/assets/projects/medical.png",
+      link: "https://github.com/Nithin1729S/Medical-Assistant",
+      skills: ["Python","Tensorflow","Streamlit"],
+      wip: false
+    },
+    {
+      title: "Document Summarization Application",
+      description: "Document Summarization App using large language model (LLM) and Langchain framework. Used a pre-trained T5 model and its tokenizer from Hugging Face Transformers library. ",
+      thumbnail: "/assets/projects/doc.png",
+      link: "https://github.com/Nithin1729S/Document-Summarization-Streamlit-Application",
+      skills: ["Python","Langchain","Streamlit"],
+      wip: false
+    },
+    
+    {
+      title: "Splitwise Application",
+      description: "A Splitwise-like payment application built using Node.js, EJS, and MySQL database.",
+      thumbnail: "/assets/projects/splitwise.png",
+      link: "https://github.com/Nithin1729S/Splitwise-Application",
+      skills: ["NodeJS", "EJS", "MySQL"],
+      wip: false
+    },
+    {
+      title: "Marks Submission Module",
+      description: "MTech IT Minor Project Marks Submission Module built using Django.",
+      thumbnail: "/assets/projects/marks.png",
+      link: "https://github.com/Nithin1729S/mtech-it-minor-marks",
+      skills: ["Django", "Redis", "Bootstrap"],
+      wip: false
+    },
+    {
+      title: "Interpret CXR using CLIP and BioBERT",
+      description: "This project, completed during my internship at HALE Labs, NITK, involves training an NLP model using BioBERT and CLIP to generate radiology reports for given chest X-ray images.",
+      thumbnail: "/assets/projects/hale.png",
+      link: "https://github.com/Nithin1729S/Interpret-CXR-BioBert-CLIP",
+      skills: ["BioBERT", "BioMedCLIP", "Streamlit"],
+      wip: false
+    },
+    {
+      title: "Tic-Tac-Toe-Server-Client-Application",
+      description: "A Client-Server application for playing the game of Tic-Tac-Toe between two players.",
+      thumbnail: "/assets/projects/tic.png",
+      link: "https://github.com/Nithin1729S/Tic-Tac-Toe-Server-Client-Application",
+      skills: ["C", "Sockets"],
+      wip: false
+    },
+    {
+      title: "Llama 2 Chat Bot",
+      description: "This chatbot is created using the open-source Llama 2 LLM model from Meta hosted on Replicate Platform.",
+      thumbnail: "/assets/projects/llama.png",
+      link: "https://github.com/Nithin1729S/Llama-2-Chat-Bot",
+      skills: ["Streamlit", "Llama2", "Replicate"],
+      wip: false
+    },    
   ];
 
   const ProjectsList = () => {
