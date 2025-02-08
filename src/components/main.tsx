@@ -350,7 +350,7 @@ export default function Main() {
 
       <footer className="flex flex-col items-start justify-between gap-y-6 sm:flex-row sm:items-end">
         <Link
-          href="https://github.com/Nithin1729S/My-Portfolio-Website---2"
+          href="https://github.com/Nithin1729S"
           rel="noreferrer noopener"
           target="_blank"
           className="group text-skeptic-800 group-hover:text-skeptic-600"
