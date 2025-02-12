@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-import MeSvg from "@/assets/me.svg";
+import MeSvg from "@/assets/me_updated.svg";
 import PPMask from "@/assets/ppmask.png";
 import GoneForGood from "@/assets/gone-for-good.svg";
 

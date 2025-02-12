@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" >
     <defs>
         <style>
-            .uuid-0894fe65-5e07-485b-9f55-151967c59c6c{fill:#fff}.uuid-1b224327-1085-4d5f-8acb-26370e6fd4d5{fill:#73453e}.uuid-4b107e85-52b5-48a9-9b70-6d681ab239c4{fill:#ba6d6b}.uuid-acaa2c76-7b27-4aee-87a6-fb85c0f136bf{fill:#f9b6a1}.uuid-7943e48f-d04f-43b7-93a4-c0b4299084d1{fill:#000000}.uuid-2cbb1cad-14b8-48af-98e2-b61c467405db{fill:#e46d25}
+            .uuid-0894fe65-5e07-485b-9f55-151967c59c6c{fill:#fff}.uuid-1b224327-1085-4d5f-8acb-26370e6fd4d5{fill:#222222}.uuid-4b107e85-52b5-48a9-9b70-6d681ab239c4{fill:#ba6d6b}.uuid-acaa2c76-7b27-4aee-87a6-fb85c0f136bf{fill:#f9b6a1}.uuid-7943e48f-d04f-43b7-93a4-c0b4299084d1{fill:#000000}.uuid-2cbb1cad-14b8-48af-98e2-b61c467405db{fill:#e46d25}
         </style>
     </defs>
     <g id="uuid-1a9cf2b5-6214-4da6-904a-9e97f5d1f6c1" data-name="Sweater">
@@ -45,6 +45,9 @@
     <path id="uuid-6592efee-9385-4142-9238-418ab495b058"
           d="M473 288c-3 39-21 55-33 63-13 7-22 13-23 27l-4 48c0 6-4 10-8 8s-19-11-19-19l-45-38s-16-35-7-96c9-60 58-87 58-87 5-3 23-14 47-9 3 0 35 7 47 38 8 22 3 47-13 65Z"
           class="uuid-7943e48f-d04f-43b7-93a4-c0b4299084d1" data-name="HairLeft"/>
+    <path id="uuid-600a6387-f15a-4d1d-8ecc-1f914d66592c"
+          d="M671 368c-22 0-41 14-49 34-14-4-30-4-45 1-8-21-28-36-51-36-29-1-53 22-56 52-16-5-72-23-94-15l3 7c18-7 70 8 91 15 2 31 26 55 56 55a56 56 0 0 0 53-71c13-5 28-6 41-1l-2 15c0 31 24 55 53 55s52-25 52-55-23-55-52-56ZM526 474c-27 0-49-22-49-50s22-51 49-50c27 0 48 22 48 50s-21 49-48 50Zm145-2c-26 1-47-21-47-48s21-49 47-49c25 0 46 22 46 49s-21 48-46 48Z"
+          data-name="Glasses" style="fill:#515146"/>
     <g id="uuid-65a8b9b3-8e4d-4adb-8cd2-ac8150bf7522" data-name="Ear">
         <path d="M400 487c-9-2-29-7-44-23-27-30-28-83-4-99 8-5 18-6 28-4l5 2c14 9 10 34 10 59l5 65Z"
               class="uuid-acaa2c76-7b27-4aee-87a6-fb85c0f136bf"/>
