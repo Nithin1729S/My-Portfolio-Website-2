@@ -174,17 +174,17 @@ export default function Chat() {
       const assistantMessage: Message = {
         id: Date.now() + 1,
         role: "assistant",
-        content: trimmedResult|| data.error || "No response received.",
+        content: trimmedResult|| data.error ||  "I didn't you. Could you please try again?",
       };
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
-      console.error("Error fetching prediction:", error);
+      //console.error("Error fetching prediction:", error);
       setMessages((prev) => [
         ...prev,
         {
           id: Date.now() + 1,
-          role: "assistant",
-          content: "An error occurred. Please try again later.",
+          role: "user",
+          content:"Oops, I seem to have lost my train of thought. Can you try asking that again?",
         },
       ]);
     } finally {
