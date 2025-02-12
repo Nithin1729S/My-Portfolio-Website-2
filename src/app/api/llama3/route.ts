@@ -7,7 +7,7 @@ const redis = createClient({
 
 (async () => {
   await redis.connect();
-})().catch(console.error); // Ensure proper error handling
+})().catch(); // Ensure proper error handling
 
 const GEMINI_API_KEY = process.env.GOOGLE_GEMINI_API_TOKEN;
 const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
@@ -54,12 +54,12 @@ export async function POST(request: Request) {
 
     // Atomically increment the counter
     const newCount = await redis.incr('global_count');
-    console.log('Global count after increment:', newCount);
+    //console.log('Global count after increment:', newCount);
 
     // If the incremented counter exceeds 10, deny the request
     if (newCount > 10) {
       return NextResponse.json(
-        { error: 'Daily limit reached' },
+        { error: "Whoa, you've chatted a lot today! Let's take a break and try again tomorrow." },
         { status: 429 }
       );
     }
@@ -69,7 +69,7 @@ export async function POST(request: Request) {
     const { prompt }: RequestBody = await request.json();
     if (!prompt) {
       return NextResponse.json(
-        { error: 'Prompt is required' },
+        { error: "Hmm, it looks like you haven't typed a message. Could you please say something?"  },
         { status: 400 }
       );
     }
@@ -93,27 +93,27 @@ export async function POST(request: Request) {
 
     // Read the response body only once
     const rawText = await response.text();
-    console.log("Raw response text:", rawText);
+    //console.log("Raw response text:", rawText);
 
     // Parse the raw text into JSON
     const data: GeminiResponse = JSON.parse(rawText);
 
     if (!response.ok) {
       return NextResponse.json(
-        { error: data.error?.message || "Prediction failed" },
+        { error: data.error?.message || "I'm a bit occupied. Please try again later." },
         { status: response.status }
       );
     }
 
     // Extract the generated text from the response structure.
     const result =
-      data.candidates?.[0]?.content?.parts?.[0]?.text || "No response";
+      data.candidates?.[0]?.content?.parts?.[0]?.text || "I didn't you. Could you try rephrasing your question?";
 
     return NextResponse.json({ result });
   } catch (error) {
-    console.error("Error calling Google Gemini API:", error);
+    //console.error("Error calling Google Gemini API:", error);
     return NextResponse.json(
-      { error: "Internal Server Error" },
+      { error: "Oh no, something went wrong on my end. Please try again in a bit."  },
       { status: 500 }
     );
   }
