@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { createClient } from 'redis';
 
 const redis = createClient({
-  url: process.env.REDIS_URL, // Ensure this is set in your .env file
+  url: process.env.REDIS_URL, 
 });
 
 (async () => {

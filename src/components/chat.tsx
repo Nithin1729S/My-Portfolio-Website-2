@@ -107,14 +107,28 @@ ieee.nitk.ac.in
 
 // Resume-based responses mapped to the corresponding premade questions
 const responses: Record<string, string> = {
-  "who are you?": `I'm Nithin S, a B.Tech student in Information Technology with a minor in Machine Learning at the National Institute of Technology Karnataka, Surathkal. I have a strong foundation in programming, algorithms, and full-stack development.`,
-  "what's your favorite programming language?": `I enjoy working with multiple languages, including C/C++, Python, Java, and JavaScript. Python stands out for its versatility, especially in Machine Learning projects, while C/C++ is great for competitive programming.`,
-  "tell me about your work experience.": `I am currently a Research Intern at the Healthcare Analytics & Language Engineering Lab under Dr. Sowmya Kamath S. My work involves training NLP models like BioClinicalBERT and BioMedCLIP to generate radiology reports from chest X-rays.`,
-  "tell me about your projects.": `I've completed a range of projects such as AesPA-Net for image style transfer using CNNs, a Web3 Vault DApp for decentralized password management, AniTalk—an anime discussion forum built with Django, and Pixel Plate, a MERN stack food ordering app with real-time updates.`,
-  "tell me about your current position.": `In my current role as a Research Intern, I focus on training and fine-tuning NLP models to interpret chest X-ray images and generate detailed radiology reports, achieving notable performance metrics.`,
-  "do you have certifications?": `Yes, I hold certifications in Data Structures & Algorithms (Abdul Bari), Machine Learning (Andrew Ng), Java Programming (Abdul Bari), and Full Stack Web Development (Udemy).`,
-  "hi": `Hi, there`,
+  "who are you?": `Hey there! I'm Nithin S. I'm a B.Tech student in Information Technology with a Minor in Machine Learning at NITK Surathkal. I love diving into coding, AI projects, and full-stack development!`,
+
+  "what's your favorite programming language?": `That's a fun one! I work with languages like C, C++, Python, Java, Go, and TypeScript/JavaScript. But if I had to pick, Python is my favorite for its flexibility—especially when I'm working on AI/ML projects.`,
+
+  "tell me about your work experience.": `Sure! I recently wrapped up a stint as a Research Intern at the Healthcare Analytics & Language Engineering Lab under Dr. Sowmya Kamath S. I got to fine-tune NLP models like BioClinicalBERT and BioMedCLIP to generate radiology reports from chest X-rays. It was a really rewarding experience!`,
+
+  "tell me about your projects.": `I've had the chance to work on some really cool projects:
+  
+- AesPA-Net: A neural style transfer network that uses CNNs to blend artistic styles.
+- AI Resume Insights: An AI-driven tool that evaluates resumes using Langchain and Gemini LLM.
+- Neuro Sudoku: A full-stack web app that extracts and solves Sudoku puzzles using computer vision and a backtracking algorithm.
+- Distributed P2P File Storage: A Go-based project that implements a secure, peer-to-peer file storage system.
+  
+Each project has taught me something new and helped me sharpen my skills!`,
+
+  "tell me about your current position.": `At the moment, I'm a Research Intern at the Healthcare Analytics & Language Engineering Lab. My focus is on training NLP models to interpret chest X-rays—a challenging role that's both exciting and deeply fulfilling!`,
+
+  "do you have certifications?": `Yes, I do! I have certifications in Data Structures & Algorithms (Abdul Bari), Machine Learning (Andrew Ng), Java Programming (Abdul Bari), and Full Stack Web Development (Udemy). They’ve been a great boost to my skills and career!`,
+
+  "hi": `Hi there!`,
 };
+
 
 export default function Chat() {
   const { chatOpen, setChatOpen } = useContext(ChatContext);
@@ -153,15 +167,29 @@ export default function Chat() {
 
     try {
       // Build the prompt by combining your resume context and the user's question.
-      const prompt = `Below is my resume context:\n\n${resumeContext}\n\nUser Question: ${input}\n\nAnswer as if you are Nithin S:`;
+      if (responses[input.toLowerCase()]) {
+        // Wait for 1 second so the loading indicator (three dots) shows up.
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        const assistantMessage: Message = {
+          id: Date.now() + 1,
+          role: "assistant",
+          content: responses[input.toLowerCase()],
+        };
+        setMessages((prev) => [...prev, assistantMessage]);
+        setIsLoading(false);
+        return;
+      }
+      
+      
+      const prompt = `Below is my resume context:\n\n${resumeContext}\n\nUser Question: ${input.split(' ').slice(0, 10).join(' ')}\n\nAnswer as if you are Nithin S. Make sure not to answer explicit questions:`;
 
       // Call your API route which proxies the Replicate API call.
-      const response = await fetch("/api/llama3", {
+      const response = await fetch("/api/gemini", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ prompt }),
+        body: JSON.stringify({ prompt: prompt }),
       });
 
       const data = await response.json();
