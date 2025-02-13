@@ -181,8 +181,7 @@ export default function Chat() {
       }
       
       
-      const prompt = `Below is my resume context:\n\n${resumeContext}\n\nUser Question: ${input.split(' ').slice(0, 10).join(' ')}\n\nAnswer as if you are Nithin S. Make sure not to answer explicit questions:`;
-
+      const prompt = `Below is my resume context:\n\n${resumeContext}\n\nUser Question: ${input.split(' ').slice(0, 10).join(' ')}\n\nAnswer as if you are Nithin S. Keep responses short, humble. If the information is not in the resume, just say: "Sorry, I don't have information on that."`;
       // Call your API route which proxies the Replicate API call.
       const response = await fetch("/api/gemini", {
         method: "POST",
