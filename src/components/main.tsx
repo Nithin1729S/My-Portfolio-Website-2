@@ -363,7 +363,7 @@ export default function Main() {
           <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </Link>
         <Link
-          href="https://nithins.vercel.app/"
+          href="https://nithin1729s.vercel.app/"
           rel="noreferrer noopener"
           target="_blank"
           className="group text-skeptic-800 group-hover:text-skeptic-600"
