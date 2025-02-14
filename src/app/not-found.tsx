@@ -1,4 +1,9 @@
 "use client";
+
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <div className="flex h-[100vh] w-[100vw] items-center justify-center px-4 py-8 lg:px-6 lg:py-16">
@@ -13,7 +18,7 @@ export default function NotFound() {
           Looks like you&apos;ve followed a broken link or entered a URL that
           doesn&apos;t exist on this site.
         </p>
-        {/* <Link
+        <Link
           href="/"
           className={cn(
             buttonVariants({ variant: "default" }),
@@ -21,7 +26,7 @@ export default function NotFound() {
           )}
         >
           Take Me Home
-        </Link> */}
+        </Link>
       </div>
     </div>
   );

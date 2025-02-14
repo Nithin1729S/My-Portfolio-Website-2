@@ -55,18 +55,26 @@ type Message = {
   content: string;
 };
 
-const resumeContext = `Nithin S
-+91 8431751290 | sureshnithin1729@gmail.com | Linkedin | github.com/Nithin1729S | My Portfolio
+const resumeContext = `
+Name: Nithin S
+Mobile Number: +918431751290 ,
+Email: sureshnithin1729@gmail.com ,
+Github Username: Nithin1729S,
+Linkedin Link: https://www.linkedin.com/in/nithin1729s/ ,
+
 Education
+
 National Institute of Technology Karnataka, Surathkal | 9.56 CGPA
 Nov 2022 - Aug 2026
-B.Tech in Information Technology and Minor in Machine Learning
+B.Tech in Information Technology and Minor in Machine Learning 
 Relevant Courses: Data Structures and Algorithms, Database Management Systems, Operating Systems, Computer Networking, Web Technologies, Object Oriented Programming, Mathematics for Machine Learning and Data Science.
+
 Technical Skills
 Languages: C, C++, Python, Java, Go, TypeScript/JavaScript
 Technologies/Frameworks: HTML/CSS, ReactJS, NextJS, NodeJS, ExpressJS, SQL, Flask, Django, FastAPI, Spring Boot
 Developer Tools: Linux, Git/GitHub, Docker, K8s, MongoDB, APIs, Cloudinary, Firebase, Streamlit, Vercel, Postman
 Certifications: Data Structures & Algorithm (Abdul Bari), Machine Learning Specialization (Andrew Ng), Java Programming (Abdul Bari), Full Stack Web Development (Udemy)
+
 Internships
 Healthcare Analytics & Language Engineering Lab | Demo | GitHub | Medium
 April 2024 - July 2024
@@ -75,24 +83,27 @@ halelabnitk.github.io
 • Tools/Framework: BioClinicalBERT, BioMedCLIP, PyTorch, Python, Streamlit
 • Trained a Natural Language Processing (NLP) model to interpret chest X-ray images and generate radiology reports by fine-tuning BioClinicalBERT and BioMedCLIP hugging face transformers.
 • Achieved a BLEU-3 score of 0.298 and an average BERT score of 0.87, with models deployed on Streamlit.
+
 Projects
-Image Style Transfer using CNNs | AesPA-Net, Python, PyTorch, Flask, Tailwind CSS | GitHub | Demo | Medium
+Image Style Transfer using CNNs | AesPA-Net, Python, PyTorch, Flask, Tailwind CSS
 • Implemented AesPA-Net, a novel Neural style transfer network, incorporating the VGG19 architecture for applying style of style image to content image with minimal style and content loss.
 • Created a Flask web application using AesPA-Net for aesthetic pattern-aware style transfer, allowing users to transform their content into artistic styles through a user-friendly interface.
-AI Resume Insights | Langchain, Gemini API, Django, Next.js, TypeScript, PostgreSQL, Docker | GitHub | Demo
+AI Resume Insights | Langchain, Gemini API, Django, Next.js, TypeScript, PostgreSQL, Docker
 • Developed an AI-powered resume evaluation system using Langchain agents with Gemini LLM, analyzing resumes on multiple metrics and providing detailed scores with improvement suggestions.
 • Built a Django backend with PostgreSQL for user management, enabling resume score history tracking with interactive graphs and AI-generated skill-based quizzes. Integrated Google OAuth 2.0 using NextAuth.
-Neuro Sudoku | Pytorch, OpenCV, Vision Transformer (ViT), FastAPI, Next.js, TypeScript | GitHub | Demo
+Neuro Sudoku | Pytorch, OpenCV, Vision Transformer (ViT), FastAPI, Next.js, TypeScript 
 • Developed a full-stack web application that extracts Sudoku grids from uploaded images, recognizes digits using a custom ViT model fine-tuned on the extended EMNIST dataset, and solves puzzles via a backtracking algorithm.
 • Integrated OpenCV for image preprocessing and built a responsive UI with Next.js alongside a FastAPI backend for real-time performance.
-Distributed P2P File Storage | Golang, TCP, Encryption, Content-Addressable Storage | GitHub
+Distributed P2P File Storage | Golang, TCP, Encryption, Content-Addressable Storage
 • This project implements a distributed file storage system that leverages content-addressable storage and AES-CTR encryption, ensuring that files are securely stored, deduplicated, and retrievable by their unique hashed keys.
 • It features a custom TCP-based peer-to-peer networking layer for dynamic file sharing, robust message handling, and efficient peer discovery.
+
 Achievements
 Branch Change: Successfully transferred to Information Technology with a CGPA of 9.76 after the first year.
 Coding Platforms: Solved 980+ problems and rated 1706 (max) on Leetcode .
 Class 12: Ranked third among Karnataka State board exam takers with a score of 99.68%.
 Class 10: Achieved the fifth-highest state ranking in the Karnataka State board exam scoring 99.36%.
+
 Leadership / Extracurricular
 The Indian Society for Technical Education, NITK Chapter
 Dec 2022 - Present
