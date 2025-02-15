@@ -19,16 +19,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "#",
+    url: "https://nithins.vercel.app",
     title: "Nithin S | Software Engineer",
-    description: "Nithin S is a software engineer",
+    description: "IT Undergrad at NITK'26",
     siteName: "Nithin S Portfolio",
+    images: [
+      {
+        url: "https://nithins.vercel.app/preview.png", // Replace with the actual image URL
+        width: 1200, // Recommended size
+        height: 630,
+        alt: "Nithin S Portfolio Preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Nithin S | Software Engineer",
-    description: "Nithin S is a software engineer",
-    creator: "@yourtwitterhandle",
+    description: "IT Undergrad at NITK'26",
+    creator: "@Nithin1729S",
   },
   robots: {
     index: true,
@@ -53,11 +61,11 @@ const jsonLd: WithContext<Person> = {
   "@type": "Person",
   name: "Nithin S",
   email: "sureshnithin1729@gmail.com",
-  url: "#",
+  url: "https://nithins.vercel.app",
   jobTitle: "Software Engineer",
-  birthDate: "2004-12-09",
+  birthDate: "2003-12-09",
   image: "https://localhost/assets/me.png",
-  description: "Nithin S is a software engineer",
+  description: "IT Undergrad at NITK'26",
 };
 
 const openSans = Open_Sans({
