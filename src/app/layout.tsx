@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     title: "Nithin S | Software Engineer",
     description: "IT Undergrad at NITK'26",
     creator: "@Nithin1729S",
+    images: ["https://nithins.vercel.app/preview.png"],
   },
   robots: {
     index: true,
@@ -82,9 +83,23 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth bg-slate-50">
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="#" />
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="canonical" href="https://nithins.vercel.app" /> 
+      <meta name="author" content="Nithin S" />
+      <meta name="theme-color" content="#0f172a" /> 
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Nithin S | Software Engineer" />
+      <meta property="og:description" content="IT Undergrad at NITK'26" />
+      <meta property="og:image" content="https://nithins.vercel.app/preview.png" />
+      <meta property="og:url" content="https://nithins.vercel.app" />
+      <meta property="og:site_name" content="Nithin S Portfolio" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Nithin S | Software Engineer" />
+      <meta name="twitter:description" content="IT Undergrad at NITK'26" />
+      <meta name="twitter:image" content="https://nithins.vercel.app/preview.png" />
+      <meta name="twitter:creator" content="@Nithin1729S" />
       </head>
       <body
         className={cn(openSans.variable, "bg-slate-50 font-body antialiased")}
