@@ -95,7 +95,7 @@ export default function Hero() {
   const [gone, setGone] = useState(false);
 
   useEffect(() => {
-    if (localStorage.getItem("angryYunus") === "true") setGone(true);
+    if (localStorage.getItem("annoyedMe") === "true") setGone(true);
   }, []);
 
   useEffect(() => {
@@ -106,7 +106,7 @@ export default function Hero() {
         setTimeout(() => {
           if (newDialog === dialogs.length - 2) {
             setGone(true);
-            localStorage.setItem("angryYunus", "true");
+            localStorage.setItem("annoyedMe", "true");
           } else {
             setClicks(0);
           }
@@ -161,7 +161,7 @@ export default function Hero() {
             {gone && (
               <GoneForGood
                 aria-hidden="true"
-                className="absolute bottom-7 left-0 right-0 -z-10 mx-auto size-24 sm:size-28"
+                className="absolute bottom-14 left-0 right-0 -z-10 mx-auto size-24 sm:size-28"
               />
             )}
           </figure>
