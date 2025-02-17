@@ -122,7 +122,7 @@ export default function Hero() {
         <div className="relative size-fit">
           <p
             className={cn(
-              "absolute left-1/2 top-0 -z-10 -translate-x-1/2 scale-75 whitespace-nowrap text-center text-skeptic-800 opacity-0 transition-all",
+              "absolute left-1/2 top-0  -translate-x-1/2 scale-75 whitespace-nowrap text-center text-skeptic-800 opacity-0 transition-all",
               clicks >= CLICKS_TO_DIALOG && "-top-8 scale-100 opacity-100",
               gone && "!opacity-0",
             )}
