@@ -50,7 +50,7 @@ GOOGLE_GEMINI_API_TOKEN="your-gemini-api-token"
 
 4. Start the development server:
    ```
-   npm run start
+   npm run dev
    ```
 
 5. Open your browser and visit `http://localhost:3000` to view the application.

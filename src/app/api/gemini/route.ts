@@ -100,7 +100,7 @@ export async function POST(request: Request) {
 
     if (!response.ok) {
       return NextResponse.json(
-        { error: data.error?.message || "I'm a bit occupied. Please try again later." },
+        { error: "I'm a bit occupied. Please try again later." },
         { status: response.status }
       );
     }
