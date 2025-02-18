@@ -29,6 +29,7 @@ Create a `.env` file in the root directory with:
 ```env
 REDIS_URL="your-redis-connection-string"
 GOOGLE_GEMINI_API_TOKEN="your-gemini-api-token"
+DEBUG=true
 ```
 
 ## Installation

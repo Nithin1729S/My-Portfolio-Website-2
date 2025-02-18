@@ -156,9 +156,12 @@ export async function POST(request: Request) {
 export async function OPTIONS(request: Request) {
   const origin = request.headers.get('Origin');
   
-  // Only allow OPTIONS requests from the allowed origins
+  // Check if the origin is in the allowed list
   if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
-    return NextResponse.json({}, { status: 403 });
+    return NextResponse.json(
+      { error:"Oops! I can only chat with you from my official website. Please visit https://nithins.vercel.app to continue our conversation!"  },
+      { status: 403 }
+    );
   }
   
   return NextResponse.json({}, {
