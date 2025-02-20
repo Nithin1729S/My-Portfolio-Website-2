@@ -5,10 +5,6 @@ const redis = createClient({
   url: process.env.REDIS_URL, 
 });
 
-(async () => {
-  await redis.connect();
-})().catch(); // Ensure proper error handling
-
 const GEMINI_API_KEY = process.env.GOOGLE_GEMINI_API_TOKEN;
 const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
 
@@ -63,6 +59,21 @@ export async function POST(request: Request) {
     }
     
     // --- Rate Limit Logic with Redis ---
+
+    try {
+      await redis.connect();
+    } catch (error) {
+      return NextResponse.json(
+        { error: "I'm a bit busy right now. Let's talk later." },
+        { 
+          status: 503,
+          headers: {
+            'Access-Control-Allow-Origin': origin
+          }
+        }
+      );
+    }
+    
     // Check if the global counter exists; if not, initialize it with a TTL of 24 hours (86400 seconds)
     let count = await redis.get('global_count');
     if (count === null) {

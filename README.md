@@ -55,3 +55,27 @@ DEBUG=true
    ```
 
 5. Open your browser and visit `http://localhost:3000` to view the application.
+
+## Installation through Docker
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/Nithin1729S/My-Portfolio-Website-2.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd My-Portfolio-Website-2
+   ```
+
+3. Build the Docker Container:
+   ```
+   docker build -t portfolio .
+   ```
+
+4. Run the container:
+   ```
+   docker run -p 3000:3000 --env-file .env.local portfolio
+   ```
+
+5. Open your browser and visit `http://localhost:3000` to view the application.

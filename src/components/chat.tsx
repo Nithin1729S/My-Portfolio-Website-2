@@ -212,7 +212,7 @@ export default function Chat() {
       const assistantMessage: Message = {
         id: Date.now() + 1,
         role: "assistant",
-        content: trimmedResult|| data.error ||  "I didn't you. Could you please try again?",
+        content: trimmedResult|| data.error ||  "I didn't get you. Could you please try again?",
       };
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
@@ -221,8 +221,8 @@ export default function Chat() {
         ...prev,
         {
           id: Date.now() + 1,
-          role: "user",
-          content:"Oops, I seem to have lost my train of thought. Can you try asking that again?",
+          role: "assistant",
+          content:"Oh no, something went wrong on my end. Please try again in a bit.",
         },
       ]);
     } finally {
