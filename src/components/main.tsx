@@ -65,7 +65,8 @@ const education = [
       start: "Nov 2022",
       end: "Aug 2026",
     },
-    description: "Grade: 9.56/10.0",
+    //description: "Grade: 9.56/10.0",
+    description: "",
   },
   {
     title: "National Institute of Technology Karnataka",
