@@ -63,6 +63,7 @@ export async function POST(request: Request) {
     try {
       await redis.connect();
     } catch (error) {
+      console.log(error)
       return NextResponse.json(
         { error: "I'm a bit busy right now. Let's talk later." },
         { 
@@ -138,6 +139,7 @@ export async function POST(request: Request) {
             'Access-Control-Allow-Origin': origin
           }
         }
+        
       );
     }
 
