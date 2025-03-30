@@ -34,11 +34,59 @@ const projects = [
       wip: false
     },
     {
+      title: "CNN Classifier for Kannada Alphabets",
+      description: "This project recognizes 49 Kannada letters using a CNN classifier (TensorFlow/Keras). A FastAPI backend and Next.js (TypeScript) frontend enable users to draw letters and get predictions.",
+      thumbnail: "/assets/projects/kannadacnn.png",
+      link: "https://github.com/Nithin1729S/Kannada-CNN",
+      skills:["Tensorflow", "CNN", "NextJS", "TypeScript"],
+      wip: false
+    },
+    {
+      title: "Siamese Network for Kannada Alphabets",
+      description: "Siamese Network for one-shot learning to classify Kannada alphabets.",
+      thumbnail: "/assets/projects/kannadasiamese.png",
+      link: "https://github.com/Nithin1729S/KannadaSiameseNet",
+      skills:["Tensorflow", "Siamese Network", "Python"],
+      wip: false
+    },
+    {
+      title: "Phishing Website Detection",
+      description: "A full-stack phishing detection platform (website + browser extension) using Next.js, TypeScript, and FastAPI. It extracts URL features, reduces them with autoencoders, and detects phishing via an SVM model.",
+      thumbnail: "/assets/projects/ias.png",
+      link: "https://github.com/Nithin1729S/Phishing-Website-Detection",
+      skills:["SVM", "NextJS", "TypeScript", "FastAPI"],
+      wip: false
+    },
+    {
+      title: "Akshara Kali",
+      description: "Akshara Kali is an interactive Kannada alphabet learning app with guided tracing, personalized tracking, and 5 mini-games. It uses a CNN-based handwriting recognition model (TensorFlow/Keras, OpenCV) for accuracy evaluation. Built with Next.js (NextAuth.js, Tailwind CSS) and FastAPI, it stores user progress in MongoDB.",
+      thumbnail: "/assets/projects/kannada.png",
+      link: "https://github.com/Nithin1729S/Kannada-ABC",
+      skills:["CNN","NextJS", "FastAPI", "TypeScript" ],
+      wip: false
+    },
+    {
+      title: "COVID 19 Prediction",
+      description: "High-Accuracy COVID-19 Prediction using an optimized union ensemble feature selection approach. This repository implements the research paper, combining ensemble feature selection with genetic algorithm-based hyperparameter optimization.",
+      thumbnail: "/assets/projects/covid.png",
+      link: "https://github.com/Nithin1729S/COVID-19-Prediction",
+      skills:["Python","Scikit-Learn", "Machine Learning", "Autoencoders" ],
+      wip: false
+    },
+    {
       title: "Wordle Helper",
       description: "A Wordle Helper built with Go and Next.js/TypeScript that uses present and absent words to predict possible solutions using an underlying backtracking algorithm.",
       thumbnail: "/assets/projects/wordle.png",
       link: "https://github.com/Nithin1729S/Wordle-Helper",
       skills: ["Next.js", "Go", "TypeScript", "TailwindCSS"],
+      wip: false
+    },
+    {
+      title: "Image Color Palette",
+      description: "Image Color Palette is a Next.js web app that extracts color palettes from images, letting users upload images, view color compositions, and copy values in RGB, HEX, and HSL formats.",
+      thumbnail: "/assets/projects/imageColorPalette.png",
+      link: "https://github.com/Nithin1729S/Image-Color-Palette",
+      skills: ["Next.js", "TypeScript", "TailwindCSS"],
       wip: false
     },
     {
@@ -55,6 +103,22 @@ const projects = [
       thumbnail: "/assets/projects/xdapp.png",
       link: "https://github.com/Nithin1729S/X_dApp",
       skills: ["Solidity", "ReactJS", "JavaScript"],
+      wip: false
+    },
+    {
+      title: "Parallel TSP",
+      description: "Parallel Implementation of Travelling Salesman Problem using OpenMP, MPI & CUDA.",
+      thumbnail: "/assets/projects/parallel.png",
+      link: "https://github.com/Nithin1729S/Parallel-TSP",
+      skills: ["OpenMP", "MPI", "CUDA"],
+      wip: false
+    },
+    {
+      title: "RemoveBG",
+      description: "RemoveBG is a Flask application designed to remove the background from images. This application can be used to process images and remove unwanted backgrounds.",
+      thumbnail: "/assets/projects/removeBG.png",
+      link: "https://github.com/Nithin1729S/RemoveBG",
+      skills: ["Flask", "Python", "Docker"],
       wip: false
     },
     {
