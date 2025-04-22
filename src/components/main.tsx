@@ -22,10 +22,10 @@ const experience = [
     location: "Mangalore, India",
     date: {
       start: "Dec 2022",
-      end: "Present",
+      end: "April 2025",
     },
     description:
-      "Mentored over 50+ students under SMP'24 and Worked on 2 projects under Crypt SIG",
+      "Mentored over 50+ students under SMP'24 and Worked on 3 projects under Crypt SIG",
     skills: ["JavaScript", "TypeScript", "React", "Next.js", "Material UI"],
   },
   {

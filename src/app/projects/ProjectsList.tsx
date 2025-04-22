@@ -34,6 +34,22 @@ const projects = [
       wip: false
     },
     {
+      title: "Web3 Vault Dapp",
+      description: "A Decentralized Password Manager compiled in Remix IDE , deployed on Ethereum BlockChain (Sepolia TestNet).",
+      thumbnail: "/assets/projects/web3.png",
+      link: "https://github.com/Nithin1729S/Web3-Vault-dApp",
+      skills: ["Solidity", "ReactJS", "JavaScript"],
+      wip: false
+    },
+    {
+      title: "X Dapp",
+      description: "A Decentralized X Application compiled in Remix IDE , deployed on Ethereum BlockChain (Sepolia TestNet) ",
+      thumbnail: "/assets/projects/xdapp.png",
+      link: "https://github.com/Nithin1729S/X_dApp",
+      skills: ["Solidity", "ReactJS", "JavaScript"],
+      wip: false
+    },
+    {
       title: "CNN Classifier for Kannada Alphabets",
       description: "This project recognizes 49 Kannada letters using a CNN classifier (TensorFlow/Keras). A FastAPI backend and Next.js (TypeScript) frontend enable users to draw letters and get predictions.",
       thumbnail: "/assets/projects/kannadacnn.png",
@@ -47,6 +63,22 @@ const projects = [
       thumbnail: "/assets/projects/kannadasiamese.png",
       link: "https://github.com/Nithin1729S/KannadaSiameseNet",
       skills:["Tensorflow", "Siamese Network", "Python"],
+      wip: false
+    },
+    {
+      title: "Wordle Helper",
+      description: "A Wordle Helper built with Go and Next.js/TypeScript that uses present and absent words to predict possible solutions using an underlying backtracking algorithm.",
+      thumbnail: "/assets/projects/wordle.png",
+      link: "https://github.com/Nithin1729S/Wordle-Helper",
+      skills: ["Next.js", "Go", "TypeScript", "TailwindCSS"],
+      wip: false
+    },
+    {
+      title: "My Portfolio Website",
+      description: "My Old  Minimalistic Portfolio Website built using ReactJS and TailwindCSS.",
+      thumbnail: "/assets/projects/portfolio.png",
+      link: "https://nithins.vercel.app/",
+      skills: ["ReactJS","JavaScript","TailwindCSS"],
       wip: false
     },
     {
@@ -66,6 +98,22 @@ const projects = [
       wip: false
     },
     {
+      title: "Splitwise Application",
+      description: "A Splitwise-like payment application built using Node.js, EJS, and MySQL database.",
+      thumbnail: "/assets/projects/splitwise.png",
+      link: "https://github.com/Nithin1729S/Splitwise-Application",
+      skills: ["NodeJS", "EJS", "MySQL"],
+      wip: false
+    },
+    {
+      title: "Anitalk",
+      description: "An Anime Forums Web App that lets users create forums ans discuss about anime , with Django backend, REST API, PostgreSQL database, and Vercel hosting.",
+      thumbnail: "/assets/projects/anitalk.png",
+      link: "https://github.com/Nithin1729S/AniTalk",
+      skills: ["Django", "Python", "PostgreSQL"],
+      wip: false
+    },
+    {
       title: "COVID 19 Prediction",
       description: "High-Accuracy COVID-19 Prediction using an optimized union ensemble feature selection approach. This repository implements the research paper, combining ensemble feature selection with genetic algorithm-based hyperparameter optimization.",
       thumbnail: "/assets/projects/covid.png",
@@ -74,13 +122,14 @@ const projects = [
       wip: false
     },
     {
-      title: "Wordle Helper",
-      description: "A Wordle Helper built with Go and Next.js/TypeScript that uses present and absent words to predict possible solutions using an underlying backtracking algorithm.",
-      thumbnail: "/assets/projects/wordle.png",
-      link: "https://github.com/Nithin1729S/Wordle-Helper",
-      skills: ["Next.js", "Go", "TypeScript", "TailwindCSS"],
+      title: "Customer Churn Prediction & Segmentation",
+      description: "Integrated Churn Prediction and Customer Segmentation Framework for Telco Business.",
+      thumbnail: "/assets/projects/churn.svg",
+      link: "https://github.com/Nithin1729S/FML_ChurnPrediction",
+      skills:["Python","Machine Learning","Segmentation" ],
       wip: false
     },
+
     {
       title: "Image Color Palette",
       description: "Image Color Palette is a Next.js web app that extracts color palettes from images, letting users upload images, view color compositions, and copy values in RGB, HEX, and HSL formats.",
@@ -89,22 +138,7 @@ const projects = [
       skills: ["Next.js", "TypeScript", "TailwindCSS"],
       wip: false
     },
-    {
-      title: "Web3 Vault Dapp",
-      description: "A Decentralized Password Manager compiled in Remix IDE , deployed on Ethereum BlockChain (Sepolia TestNet).",
-      thumbnail: "/assets/projects/web3.png",
-      link: "https://github.com/Nithin1729S/Web3-Vault-dApp",
-      skills: ["Solidity", "ReactJS", "JavaScript"],
-      wip: false
-    },
-    {
-      title: "X Dapp",
-      description: "A Decentralized X Application compiled in Remix IDE , deployed on Ethereum BlockChain (Sepolia TestNet) ",
-      thumbnail: "/assets/projects/xdapp.png",
-      link: "https://github.com/Nithin1729S/X_dApp",
-      skills: ["Solidity", "ReactJS", "JavaScript"],
-      wip: false
-    },
+    
     {
       title: "Parallel TSP",
       description: "Parallel Implementation of Travelling Salesman Problem using OpenMP, MPI & CUDA.",
@@ -119,14 +153,6 @@ const projects = [
       thumbnail: "/assets/projects/removeBG.png",
       link: "https://github.com/Nithin1729S/RemoveBG",
       skills: ["Flask", "Python", "Docker"],
-      wip: false
-    },
-    {
-      title: "Anitalk",
-      description: "An Anime Forums Web App that lets users create forums ans discuss about anime , with Django backend, REST API, PostgreSQL database, and Vercel hosting.",
-      thumbnail: "/assets/projects/anitalk.png",
-      link: "https://github.com/Nithin1729S/AniTalk",
-      skills: ["Django", "Python", "PostgreSQL"],
       wip: false
     },
     {
@@ -145,14 +171,7 @@ const projects = [
       skills: ["ReactJS","JavaScript","TailwindCSS","MongoDB"],
       wip: false
     },
-    {
-      title: "My Portfolio Website",
-      description: "My Old  Minimalistic Portfolio Website built using ReactJS and TailwindCSS.",
-      thumbnail: "/assets/projects/portfolio.png",
-      link: "https://nithins.vercel.app/",
-      skills: ["ReactJS","JavaScript","TailwindCSS"],
-      wip: false
-    },
+   
     {
       title: "Deep Dive - System Resource Monitor",
       description: "A System resource monitoring tool leveraging Python libraries like Psutil, os, PyCPUInfo, Disto and Qt GUI interface for comprehensive real-time tracking and analysis of system resources",
@@ -210,14 +229,7 @@ const projects = [
       wip: false
     },
     
-    {
-      title: "Splitwise Application",
-      description: "A Splitwise-like payment application built using Node.js, EJS, and MySQL database.",
-      thumbnail: "/assets/projects/splitwise.png",
-      link: "https://github.com/Nithin1729S/Splitwise-Application",
-      skills: ["NodeJS", "EJS", "MySQL"],
-      wip: false
-    },
+    
     {
       title: "Marks Submission Module",
       description: "MTech IT Minor Project Marks Submission Module built using Django.",
