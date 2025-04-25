@@ -16,6 +16,19 @@ import ButtonGroup from "@/components/button-group";
 
 const experience = [
   {
+    title: "Software Engineer Intern",
+    company: "Google India",
+    link: "https://www.google.com/",
+    location: "Bengaluru, India",
+    date: {
+      start: "May 2025",
+      end: "Present",
+    },
+    description:
+      "",
+    skills: [],
+  },
+  {
     title: "Executive Member",
     company: "ISTE NITK",
     link: "https://iste.nitk.ac.in/#/#/",
@@ -120,33 +133,32 @@ export default function Main() {
   return (
     <main className="pb-10 pt-24 text-skeptic-800 md:pb-16 lg:max-w-prose lg:py-16">
       <Chat />
-
       <section id="about" className="mb-24 scroll-mt-16" aria-label="About me">
-        <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
-        <p className="mt-5 text-skeptic-900">
-          As a 3rd year undergraduate at the{" "}
-          <strong>National Institute of Technology, Karnataka</strong>, I&apos;m
-          passionate about the ever-evolving world of technology. Currently
-          pursuing Bachelor&apos;s in Information Technology and minors in
-          Machine Learning, I&apos;m on a journey to explore the endless
-          possibilities that technology offers.
-        </p>
-        <p className="mt-3 text-skeptic-900">
-          With a deep fascination for emerging tech trends and their impact on
-          our daily lives, I&apos;m dedicated to staying at the forefront of
-          innovation and contributing to the tech ecosystem.
-        </p>
-        <p className="mt-3 text-skeptic-900">
-          I am proficient in C, C++ and Python with a strong hold on Data
-          Structures and Algorithms. My areas of interest include Software
-          Development, Machine Learning, Deep Learning, Data Analytics, NLP,
-          Blockchain and Database Management Systems. I am a keen learner,
-          handworker and a good problem solver with a strong work ethic. I have
-          done several projects in the field of Web Development, Machine
-          Learning, Deep Learning, NLP and Blockchain.
-        </p>
-        <ButtonGroup />
-      </section>
+  <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
+  <p className="mt-5 text-skeptic-900">
+    As a final year undergraduate at the{" "}
+    <strong>National Institute of Technology, Karnataka</strong>, I&apos;m
+    passionate about the ever-evolving world of technology. Currently pursuing
+    <strong> Bachelor&apos;s in Information Technology</strong> with a <strong>Minor in Machine Learning</strong>,
+    I&apos;m on a journey to explore the endless possibilities that technology offers.
+  </p>
+  <p className="mt-3 text-skeptic-900">
+    I&apos;m currently interning at <strong>Google India</strong> as a Software
+    Engineering Intern, where I get to apply my skills to real-world problems
+    and learn from some of the brightest minds in the industry.
+  </p>
+
+  <p className="mt-3 text-skeptic-900">
+    I am proficient in C, C++ and Python with a strong hold on Data Structures
+    and Algorithms. My areas of interest include Software Development, Machine
+    Learning, Deep Learning, Data Analytics, NLP, Blockchain and Database
+    Management Systems. I am a keen learner, hardworking and a good problem
+    solver with a strong work ethic. I have done several projects in the field
+    of Web Development, Machine Learning, Deep Learning, NLP and Blockchain.
+  </p>
+  <ButtonGroup />
+</section>
+
 
       <section
         id="experience"
