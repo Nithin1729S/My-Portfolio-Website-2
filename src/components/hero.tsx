@@ -168,7 +168,7 @@ export default function Hero() {
         </div>
         <div className="mt-10 text-skeptic-800">
           <h1 className="text-3xl font-bold tracking-tight">Nithin S</h1>
-          <h2 className="mt-1 text-xl tracking-tight">Software Engineer</h2>
+          <h2 className="mt-1 text-xl tracking-tight">IT Undergrad @ NITK</h2>
         </div>
         <nav
           className="mt-10 hidden lg:block"
