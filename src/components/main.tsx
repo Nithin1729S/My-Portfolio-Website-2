@@ -16,6 +16,19 @@ import ButtonGroup from "@/components/button-group";
 
 const experience = [
   {
+    title: "Software Engineering Intern",
+    company: "Google India",
+    link: "https://drive.google.com/file/d/14Zy0gxOhisvAHLqrwU6NmIosM91Zi5Zh/view?usp=sharing",
+    location: "Bengaluru, India",
+    date: {
+      start: "May 2025",
+      end: "August 2025",
+    },
+    description:
+      "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to optimal ads, and built a scalable data pipeline using optimized SQL for training data extraction. Integrated the model into low-latency ads infrastructure and validated its effectiveness through experimental analysis.",
+    skills: ["C++", "Large Language Models", "Python", "SQL", "Pipeline Design"],
+  },
+  {
     title: "Executive Member",
     company: "ISTE NITK",
     link: "https://iste.nitk.ac.in/#/#/",
@@ -122,31 +135,36 @@ export default function Main() {
       <Chat />
 
       <section id="about" className="mb-24 scroll-mt-16" aria-label="About me">
-        <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
-        <p className="mt-5 text-skeptic-900">
-          As a 3rd year undergraduate at the{" "}
-          <strong>National Institute of Technology, Karnataka</strong>, I&apos;m
-          passionate about the ever-evolving world of technology. Currently
-          pursuing Bachelor&apos;s in Information Technology and minors in
-          Machine Learning, I&apos;m on a journey to explore the endless
-          possibilities that technology offers.
-        </p>
-        <p className="mt-3 text-skeptic-900">
-          With a deep fascination for emerging tech trends and their impact on
-          our daily lives, I&apos;m dedicated to staying at the forefront of
-          innovation and contributing to the tech ecosystem.
-        </p>
-        <p className="mt-3 text-skeptic-900">
-          I am proficient in C, C++ and Python with a strong hold on Data
-          Structures and Algorithms. My areas of interest include Software
-          Development, Machine Learning, Deep Learning, Data Analytics, NLP,
-          Blockchain and Database Management Systems. I am a keen learner,
-          handworker and a good problem solver with a strong work ethic. I have
-          done several projects in the field of Web Development, Machine
-          Learning, Deep Learning, NLP and Blockchain.
-        </p>
-        <ButtonGroup />
-      </section>
+  <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
+  <p className="mt-5 text-skeptic-900">
+    As a final year undergraduate at the{" "}
+    <strong>National Institute of Technology, Karnataka</strong>, I&apos;m
+    passionate about the ever-evolving world of technology. Currently
+    pursuing a Bachelor&apos;s in Information Technology with a minor in
+    Machine Learning, I&apos;m on a journey to explore the endless
+    possibilities that technology offers.
+  </p>
+  <p className="mt-3 text-skeptic-900">
+    I recently completed a Software Engineering Internship at <strong> Google India</strong>, 
+    where I had the opportunity to work on impactful real-world projects in Google Ads and deepen my software development skills.
+  </p>
+  <p className="mt-3 text-skeptic-900">
+    With a deep fascination for emerging tech trends and their impact on
+    our daily lives, I&apos;m dedicated to staying at the forefront of
+    innovation and contributing to the tech ecosystem.
+  </p>
+  <p className="mt-3 text-skeptic-900">
+    I am proficient in C, C++ and Python with a strong hold on Data
+    Structures and Algorithms. My areas of interest include Software
+    Development, Machine Learning, Deep Learning, Data Analytics, NLP,
+    Blockchain and Database Management Systems. I am a keen learner,
+    hardworking and a good problem solver with a strong work ethic. I have
+    completed several projects in the fields of Web Development, Machine
+    Learning, Deep Learning, NLP and Blockchain.
+  </p>
+  <ButtonGroup />
+</section>
+
 
       <section
         id="experience"
