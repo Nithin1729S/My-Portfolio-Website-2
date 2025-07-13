@@ -84,6 +84,20 @@ halelabnitk.github.io
 • Trained a Natural Language Processing (NLP) model to interpret chest X-ray images and generate radiology reports by fine-tuning BioClinicalBERT and BioMedCLIP hugging face transformers.
 • Achieved a BLEU-3 score of 0.298 and an average BERT score of 0.87, with models deployed on Streamlit.
 
+Google India - Software Engineering Intern 
+May 2025 - Aug 2025
+Google Ads Bengaluru
+• Tools/Frameworks: LLM Fine-Tuning & Distillation, Data Pipeline Development , SQL Optimization, Ads Serving
+Systems, Experimental Design & Analysis, C++, Python.
+• Enhanced local ad targeting precision by fine-tuning a Large Language Model (LLM) and employing distillation
+techniques to create a performant model for matching user queries to optimal ads.
+• Designed and implemented a robust, scalable pipeline with highly optimized SQL queries to process and extract training
+data from various large-scale log systems.
+• Authored C++ code to integrate the distilled LLM into the low-latency ads serving infrastructure, ensuring seamless
+production deployment.
+• Conducted and analyzed an experimental study to quantify the performance gains and feasibility of the LLM-based ad
+matching, establishing a successful proof of concept.
+
 Projects
 Image Style Transfer using CNNs | AesPA-Net, Python, PyTorch, Flask, Tailwind CSS
 • Implemented AesPA-Net, a novel Neural style transfer network, incorporating the VGG19 architecture for applying style of style image to content image with minimal style and content loss.
