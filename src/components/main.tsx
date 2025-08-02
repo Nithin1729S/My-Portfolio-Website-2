@@ -25,7 +25,7 @@ const experience = [
       end: "August 2025",
     },
     description:
-      "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to optimal ads, and built a scalable data pipeline using optimized SQL for training data extraction. Integrated the model into low-latency ads infrastructure and validated its effectiveness through experimental analysis.",
+      "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to optimal ads, and built a scalable data pipeline using optimized SQL for training data extraction. Integrated the model into low-latency ads infrastructure and validated its effectiveness by deployting it in 1% Search Traffic, resulting in positive click-through rates.",
     skills: ["C++", "Large Language Models", "Python", "SQL", "Pipeline Design"],
   },
   {
