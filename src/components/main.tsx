@@ -16,7 +16,7 @@ import ButtonGroup from "@/components/button-group";
 
 const experience = [
   {
-    title: "Software Engineering Intern",
+    title: "Software Engineer Intern",
     company: "Google India",
     link: "https://drive.google.com/file/d/14Zy0gxOhisvAHLqrwU6NmIosM91Zi5Zh/view?usp=sharing",
     location: "Bengaluru, India",
