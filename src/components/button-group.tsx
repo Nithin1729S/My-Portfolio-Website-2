@@ -32,7 +32,7 @@ export default function ButtonGroup() {
         variant="outline"
         className="group text-skeptic-700 hover:bg-slate-100 hover:text-skeptic-800"
       >
-        <Link href="https://drive.google.com/file/d/1KmpQA0Gac3s8opgbS5bq0RzFzVqlQQfC/view?usp=sharing" prefetch={false} target="_blank">
+        <Link href="https://drive.google.com/file/d/1gl1RT6UM8COuJGyc3FqbsUnL9MVjNOox/view?usp=sharing" prefetch={false} target="_blank">
           Resume
         </Link>
       </Button>
