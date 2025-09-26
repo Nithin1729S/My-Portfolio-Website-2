@@ -64,7 +64,7 @@ Linkedin Link: https://www.linkedin.com/in/nithin1729s/ ,
 
 Education
 
-National Institute of Technology Karnataka, Surathkal | 9.56 CGPA
+National Institute of Technology Karnataka, Surathkal | 9.49 CGPA
 Nov 2022 - Aug 2026
 B.Tech in Information Technology and Minor in Machine Learning 
 Relevant Courses: Data Structures and Algorithms, Database Management Systems, Operating Systems, Computer Networking, Web Technologies, Object Oriented Programming, Mathematics for Machine Learning and Data Science.
@@ -75,14 +75,7 @@ Technologies/Frameworks: HTML/CSS, ReactJS, NextJS, NodeJS, ExpressJS, SQL, Flas
 Developer Tools: Linux, Git/GitHub, Docker, K8s, MongoDB, APIs, Cloudinary, Firebase, Streamlit, Vercel, Postman
 Certifications: Data Structures & Algorithm (Abdul Bari), Machine Learning Specialization (Andrew Ng), Java Programming (Abdul Bari), Full Stack Web Development (Udemy)
 
-Internships
-Healthcare Analytics & Language Engineering Lab | Demo | GitHub | Medium
-April 2024 - July 2024
-Research Intern under Dr. Sowmya Kamath S (Paper under review)
-halelabnitk.github.io
-• Tools/Framework: BioClinicalBERT, BioMedCLIP, PyTorch, Python, Streamlit
-• Trained a Natural Language Processing (NLP) model to interpret chest X-ray images and generate radiology reports by fine-tuning BioClinicalBERT and BioMedCLIP hugging face transformers.
-• Achieved a BLEU-3 score of 0.298 and an average BERT score of 0.87, with models deployed on Streamlit.
+Experience
 
 Google India - Software Engineering Intern 
 May 2025 - Aug 2025
@@ -132,24 +125,21 @@ ieee.nitk.ac.in
 
 // Resume-based responses mapped to the corresponding premade questions
 const responses: Record<string, string> = {
-  "who are you?": `Hey there! I'm Nithin S. I'm a B.Tech student in Information Technology with a Minor in Machine Learning at NITK Surathkal. I love diving into coding, AI projects, and full-stack development!`,
+  "who are you?": `Hi! I'm Nithin S, a B.Tech IT student at NITK Surathkal with a Minor in Machine Learning. I enjoy building AI/ML systems and full-stack projects.`,
 
-  "what's your favorite programming language?": `That's a fun one! I work with languages like C, C++, Python, Java, Go, and TypeScript/JavaScript. But if I had to pick, Python is my favorite for its flexibility—especially when I'm working on AI/ML projects.`,
+  "what's your favorite programming language?": `I work with C++, Python, Java, Go, and TypeScript/JS. Python is my favorite—great for ML and prototyping ideas quickly.`,
 
-  "tell me about your work experience.": `Sure! I recently wrapped up a stint as a Research Intern at the Healthcare Analytics & Language Engineering Lab under Dr. Sowmya Kamath S. I got to fine-tune NLP models like BioClinicalBERT and BioMedCLIP to generate radiology reports from chest X-rays. It was a really rewarding experience!`,
+  "tell me about your work experience.": `I interned at Google Ads, where I fine-tuned and distilled an LLM to build a dual encoder model for better ad targeting. I designed scalable data pipelines, optimized SQL queries, and integrated the model into Google's low-latency ad serving stack.`,
 
-  "tell me about your projects.": `I've had the chance to work on some really cool projects:
-  
-- AesPA-Net: A neural style transfer network that uses CNNs to blend artistic styles.
-- AI Resume Insights: An AI-driven tool that evaluates resumes using Langchain and Gemini LLM.
-- Neuro Sudoku: A full-stack web app that extracts and solves Sudoku puzzles using computer vision and a backtracking algorithm.
-- Distributed P2P File Storage: A Go-based project that implements a secure, peer-to-peer file storage system.
-  
-Each project has taught me something new and helped me sharpen my skills!`,
+  "tell me about your projects.": `Some key projects:
+- AesPA-Net: Neural style transfer with CNNs for artistic image transformations.  
+- AI Resume Insights: LLM-powered resume scoring with Django + Next.js.  
+- Neuro Sudoku: Computer vision + ViT model to extract & solve Sudoku puzzles.  
+- P2P File Storage: Secure, distributed file storage in Go with encryption.`,
 
-  "tell me about your current position.": `At the moment, I'm a Research Intern at the Healthcare Analytics & Language Engineering Lab. My focus is on training NLP models to interpret chest X-rays—a challenging role that's both exciting and deeply fulfilling!`,
+  "tell me about your current position.": `I recently completed my internship at Google Ads, focusing on LLM fine-tuning, scalable pipelines, and production deployment.`,
 
-  "do you have certifications?": `Yes, I do! I have certifications in Data Structures & Algorithms (Abdul Bari), Machine Learning (Andrew Ng), Java Programming (Abdul Bari), and Full Stack Web Development (Udemy). They’ve been a great boost to my skills and career!`,
+  "do you have certifications?": `Yes, I hold Andrew Ng's Machine Learning and Deep Learning Specializations, which strengthened my ML fundamentals.`,
 
   "hi": `Hi there!`,
 };
