@@ -25,7 +25,7 @@ const experience = [
       end: "August 2025",
     },
     description:
-      "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to relevant ads, and built a scalable data pipeline using optimized SQL for training data extraction. Integrated the model into low-latency ads serving stack and validated its effectiveness by deployting it in 1% Search Traffic, resulting in positive click-through rates.",
+      "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to relevant ads, and built a scalable data pipeline using optimized SQL for training data extraction. \n \n Integrated the model into low-latency ads serving stack and validated its effectiveness by deployting it in 1% Search Traffic, resulting in positive click-through rates.",
     skills: ["C++", "Python", "SQL", "Protocol Buffers","Large Language Models", "Pipeline Design"],
   },
   {
@@ -134,36 +134,20 @@ export default function Main() {
     <main className="pb-10 pt-24 text-skeptic-800 md:pb-16 lg:max-w-prose lg:py-16">
       <Chat />
 
-      <section id="about" className="mb-24 scroll-mt-16" aria-label="About me">
+     <section id="about" className="mb-24 scroll-mt-16" aria-label="About me">
   <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
   <p className="mt-5 text-skeptic-900">
-    As a final year undergraduate at the{" "}
-    <strong>National Institute of Technology, Karnataka</strong>, I&apos;m
-    passionate about the ever-evolving world of technology. Currently
-    pursuing a Bachelor&apos;s in Information Technology with a minor in
-    Machine Learning, I&apos;m on a journey to explore the endless
-    possibilities that technology offers.
+    I’m a final-year Information Technology undergrad at <strong>NITK Surathkal</strong> (2026 batch), always exploring new tech and picking up new skills.
   </p>
   <p className="mt-3 text-skeptic-900">
-    I recently completed a Software Engineering Internship at <strong> Google India</strong>, 
-    where I had the opportunity to work on impactful real-world projects in Google Ads and deepen my software development skills.
+    I recently wrapped up my Software Engineering Internship at <strong>Google India</strong> and will be joining as a <strong>Full-Time Engineer</strong> in 2026.
   </p>
   <p className="mt-3 text-skeptic-900">
-    With a deep fascination for emerging tech trends and their impact on
-    our daily lives, I&apos;m dedicated to staying at the forefront of
-    innovation and contributing to the tech ecosystem.
-  </p>
-  <p className="mt-3 text-skeptic-900">
-    I am proficient in C, C++ and Python with a strong hold on Data
-    Structures and Algorithms. My areas of interest include Software
-    Development, Machine Learning, Deep Learning, Data Analytics, NLP,
-    Blockchain and Database Management Systems. I am a keen learner,
-    hardworking and a good problem solver with a strong work ethic. I have
-    completed several projects in the fields of Web Development, Machine
-    Learning, Deep Learning, NLP and Blockchain.
+    Comfortable with C, C++, Python. Into building real solutions in Software Dev, ML/DL, NLP, Blockchain, and Data Analytics. Love tackling challenges that actually get stuff done.
   </p>
   <ButtonGroup />
 </section>
+
 
 
       <section
@@ -213,7 +197,7 @@ export default function Main() {
                 </aside>
               </div>
               <div className="mt-3 text-skeptic-950">
-                <p className="text-sm">{exp.description}</p>
+                <p className="text-sm whitespace-pre-line">{exp.description}</p>
                 <ul
                   className="mr-14 mt-3 flex flex-wrap gap-1.5 tracking-wide sm:gap-2"
                   aria-label="Technology stack"
