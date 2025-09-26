@@ -28,45 +28,45 @@ const experience = [
       "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to relevant ads, and built a scalable data pipeline using optimized SQL for training data extraction. \n \n Integrated the model into low-latency ads serving stack and validated its effectiveness by deployting it in 1% Search Traffic, resulting in positive click-through rates.",
     skills: ["C++", "Python", "SQL", "Protocol Buffers","Large Language Models", "Pipeline Design"],
   },
-  {
-    title: "Executive Member",  
-    company: "ISTE NITK",
-    link: "https://iste.nitk.ac.in/#/#/",
-    location: "Mangalore, India",
-    date: {
-      start: "Dec 2022",
-      end: "April 2025",
-    },
-    description:
-      "Mentored over 50+ students under SMP'24 and Worked on 3 projects under Crypt SIG",
-    skills: ["JavaScript", "TypeScript", "React", "Next.js", "Material UI"],
-  },
-  {
-    title: "NLP Intern",
-    company: "HALE Lab NITK",
-    link: "halelabnitk.github.io",
-    location: "Mangalore, India",
-    date: {
-      start: "April 2024",
-      end: "July 2024",
-    },
-    description:
-      "Trained a Natural Language Processing (NLP) model to interpret chest X-ray images and generate radiology reports by fine-tuning BioClinicalBERT and BioMedCLIP hugging face transformers",
-    skills: ["Natural Language Processing", "PyTorch", "Python", "Streamlit"],
-  },
-  {
-    title: "Student Member",
-    company: "IEEE NITK",
-    link: "https://ieee.nitk.ac.in/",
-    location: "Mangalore, India",
-    date: {
-      start: "Nov 2022",
-      end: "July 2023",
-    },
-    description:
-      "Involved in a project that aims to simulate a Robotic arm using the Robot Operating System (ROS).",
-    skills: ["PyTorch", "Tkinter", "ROS"],
-  },
+  // {
+  //   title: "Executive Member",  
+  //   company: "ISTE NITK",
+  //   link: "https://iste.nitk.ac.in/#/#/",
+  //   location: "Mangalore, India",
+  //   date: {
+  //     start: "Dec 2022",
+  //     end: "April 2025",
+  //   },
+  //   description:
+  //     "Mentored over 50+ students under SMP'24 and Worked on 3 projects under Crypt SIG",
+  //   skills: ["JavaScript", "TypeScript", "React", "Next.js", "Material UI"],
+  // },
+  // {
+  //   title: "NLP Intern",
+  //   company: "HALE Lab NITK",
+  //   link: "halelabnitk.github.io",
+  //   location: "Mangalore, India",
+  //   date: {
+  //     start: "April 2024",
+  //     end: "July 2024",
+  //   },
+  //   description:
+  //     "Trained a Natural Language Processing (NLP) model to interpret chest X-ray images and generate radiology reports by fine-tuning BioClinicalBERT and BioMedCLIP hugging face transformers",
+  //   skills: ["Natural Language Processing", "PyTorch", "Python", "Streamlit"],
+  // },
+  // {
+  //   title: "Student Member",
+  //   company: "IEEE NITK",
+  //   link: "https://ieee.nitk.ac.in/",
+  //   location: "Mangalore, India",
+  //   date: {
+  //     start: "Nov 2022",
+  //     end: "July 2023",
+  //   },
+  //   description:
+  //     "Involved in a project that aims to simulate a Robotic arm using the Robot Operating System (ROS).",
+  //   skills: ["PyTorch", "Tkinter", "ROS"],
+  // },
 ];
 const education = [
   {
