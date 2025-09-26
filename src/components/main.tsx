@@ -71,27 +71,26 @@ const experience = [
 const education = [
   {
     title: "National Institute of Technology Karnataka",
-    company: "B.Tech in Information Technology",
+    company: "B.Tech in Information Technology with Minor in Machine Learning",
     link: "https://iste.nitk.ac.in/#/#/",
     location: "Mangalore, India",
     date: {
       start: "Nov 2022",
       end: "Aug 2026",
     },
-    //description: "Grade: 9.56/10.0",
-    description: "",
+    description: "Grade: 9.49/10.0",
   },
-  {
-    title: "National Institute of Technology Karnataka",
-    company: "Minor in Machine Learning",
-    link: "halelabnitk.github.io",
-    location: "Mangalore, India",
-    date: {
-      start: "Aug 2023",
-      end: "Aug 2026",
-    },
-    description: "",
-  },
+  // {
+  //   title: "National Institute of Technology Karnataka",
+  //   company: "Minor in Machine Learning",
+  //   link: "halelabnitk.github.io",
+  //   location: "Mangalore, India",
+  //   date: {
+  //     start: "Aug 2023",
+  //     end: "Aug 2026",
+  //   },
+  //   description: "",
+  // },
 ];
 
 const projects = [
@@ -162,7 +161,7 @@ export default function Main() {
               className={cn(
                 "relative ml-3 pl-5 before:absolute before:-left-2 before:top-2 before:h-full before:w-0.5 before:rounded-full before:bg-slate-300 before:content-[''] after:absolute after:-left-[0.93rem] after:top-1 after:size-4 after:rounded-full after:bg-slate-300 after:content-['']",
                 index !== experience.length - 1 && "pb-10",
-                index === 0 && "after:bg-skeptic-700",
+                index === 10 && "after:bg-skeptic-700",
               )}
               key={index}
             >
