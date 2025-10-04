@@ -17,6 +17,7 @@ import ButtonGroup from "@/components/button-group";
 const experience = [
   {
     title: "Software Engineer Intern",
+    logo: "assets/experience/google1.svg",
     company: "Google India",
     link: "https://drive.google.com/file/d/14Zy0gxOhisvAHLqrwU6NmIosM91Zi5Zh/view?usp=sharing",
     location: "Bengaluru, India",
@@ -26,10 +27,17 @@ const experience = [
     },
     description:
       "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to relevant ads, and built a scalable data pipeline using optimized SQL for training data extraction. \n \n Integrated the model into low-latency ads serving stack and validated its effectiveness by deploying it in 1% Search Traffic, resulting in positive click-through rates.",
-    skills: ["C++", "Python", "SQL", "Protocol Buffers","Large Language Models", "Pipeline Design"],
+    skills: [
+      "C++",
+      "Python",
+      "SQL",
+      "Protocol Buffers",
+      "Large Language Models",
+      "Pipeline Design",
+    ],
   },
   // {
-  //   title: "Executive Member",  
+  //   title: "Executive Member",
   //   company: "ISTE NITK",
   //   link: "https://iste.nitk.ac.in/#/#/",
   //   location: "Mangalore, India",
@@ -98,7 +106,8 @@ const projects = [
     title: "Image Style Transfer Using CNNs",
     link: "https://github.com/Nithin1729S/Image-Style-Transfer-Using-CNNs.git",
     thumbnail: imageStyleTransfer,
-    description: "A Flask application that uses neural style transfer to blend content and style images effortlessly",
+    description:
+      "A Flask application that uses neural style transfer to blend content and style images effortlessly",
     skills: ["Pytorch", "CNN", "Flask", "Python"],
     wip: false,
   },
@@ -106,7 +115,8 @@ const projects = [
     title: "AI Resume Insights",
     link: "https://github.com/Nithin1729S/AI-Resume-Insights",
     thumbnail: airesume,
-    description: "An AI-driven resume feedback system built with Langchain and Gemini API.",
+    description:
+      "An AI-driven resume feedback system built with Langchain and Gemini API.",
     skills: ["Langchain", "Gemini API", "Next.js", "Django"],
     wip: false,
   },
@@ -122,7 +132,8 @@ const projects = [
     title: "Distributed P2P Database",
     link: "https://github.com/Nithin1729S/Distributed-DB",
     thumbnail: ds,
-    description: "This project is a distributed file storage system implemented in Go.",
+    description:
+      "This project is a distributed file storage system implemented in Go.",
     skills: ["Golang", "TCP", "AES-CTR", "CAS"],
     wip: false,
   },
@@ -133,21 +144,24 @@ export default function Main() {
     <main className="pb-10 pt-24 text-skeptic-800 md:pb-16 lg:max-w-prose lg:py-16">
       <Chat />
 
-     <section id="about" className="mb-24 scroll-mt-16" aria-label="About me">
-  <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
-  <p className="mt-5 text-skeptic-900">
-    I’m a final-year Information Technology undergrad at <strong>NITK Surathkal</strong> (2026 batch).
-  </p>
-  <p className="mt-3 text-skeptic-900">
-    I recently wrapped up my Software Engineering Internship at <strong>Google India</strong> and will be joining as a <strong>Full-Time Engineer</strong> in 2026.
-  </p>
-  <p className="mt-3 text-skeptic-900">
-    Comfortable with C, C++, Python. Into building real solutions in Software Dev, ML/DL, NLP, Blockchain, and Data Analytics. Love tackling challenges that actually get stuff done.
-  </p>
-  <ButtonGroup />
-</section>
-
-
+      <section id="about" className="mb-24 scroll-mt-16" aria-label="About me">
+        <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
+        <p className="mt-5 text-skeptic-900">
+          I’m a final-year Information Technology undergrad at{" "}
+          <strong>NITK Surathkal</strong> (2026 batch).
+        </p>
+        <p className="mt-3 text-skeptic-900">
+          I recently wrapped up my Software Engineering Internship at{" "}
+          <strong>Google India</strong> and will be joining as a{" "}
+          <strong>Full-Time Engineer</strong> in 2026.
+        </p>
+        <p className="mt-3 text-skeptic-900">
+          Comfortable with C, C++, Python. Into building real solutions in
+          Software Dev, ML/DL, NLP, Blockchain, and Data Analytics. Love
+          tackling challenges that actually get stuff done.
+        </p>
+        <ButtonGroup />
+      </section>
 
       <section
         id="experience"
@@ -166,19 +180,30 @@ export default function Main() {
               key={index}
             >
               <div className="flex flex-col-reverse justify-between gap-y-2 sm:flex-row">
-                <h3 className="relative flex flex-col leading-snug">
-                  <span className="text-lg font-bold leading-none tracking-tight">
-                    {exp.title}
-                  </span>
-                  <Link
-                    href={exp.link}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="group font-medium tracking-tight hover:text-skeptic-700"
-                  >
-                    {exp.company}
-                    <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                  </Link>
+                <h3 className="relative flex items-start gap-3 leading-snug">
+                  <div className="flex-shrink-0 ">
+                    <Image
+                      src={exp.logo}
+                      alt={`${exp.company} logo`}
+                      width={38} // fixed
+                      height={28} // fixed
+                      className="rounded object-contain"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-lg font-bold leading-none tracking-tight">
+                      {exp.title}
+                    </span>
+                    <Link
+                      href={exp.link}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="group font-medium tracking-tight hover:text-skeptic-700"
+                    >
+                      {exp.company}
+                      <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                    </Link>
+                  </div>
                 </h3>
                 <aside className="flex-shrink-0">
                   <p
@@ -196,7 +221,7 @@ export default function Main() {
                 </aside>
               </div>
               <div className="mt-3 text-skeptic-950">
-                <p className="text-sm whitespace-pre-line">{exp.description}</p>
+                <p className="whitespace-pre-line text-sm">{exp.description}</p>
                 <ul
                   className="mr-14 mt-3 flex flex-wrap gap-1.5 tracking-wide sm:gap-2"
                   aria-label="Technology stack"
@@ -271,7 +296,7 @@ export default function Main() {
           Some Things I&apos;ve Built
         </h2>
         <ul className="mt-8 flex flex-col gap-14 text-skeptic-900">
-          {projects.slice(0,4).map((project) => (
+          {projects.slice(0, 4).map((project) => (
             <li
               className="group relative z-0 flex flex-col gap-4 sm:flex-row"
               key={project.title}
@@ -347,8 +372,7 @@ export default function Main() {
         id="blog"
         className="mb-24 scroll-mt-16"
         aria-label="Recent blog posts"
-      >
-      </section>
+      ></section>
 
       <footer className="flex flex-col items-start justify-between gap-y-6 sm:flex-row sm:items-end">
         <Link
