@@ -360,7 +360,7 @@ export default function Main() {
         <div className="mt-10 flex justify-center">
           <Link
             href="/projects"
-            className="group flex items-center text-sm font-semibold text-skeptic-900 hover:text-skeptic-700"
+            className="group flex items-center text-sm  text-skeptic-900 hover:text-skeptic-700"
           >
             Show More
             <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -375,19 +375,17 @@ export default function Main() {
       ></section>
 
       <footer className="flex flex-col items-start justify-between gap-y-6 sm:flex-row sm:items-end">
-        <Link
+        {/* <Link
           href="https://github.com/Nithin1729S"
           rel="noreferrer noopener"
           target="_blank"
           className="group text-skeptic-800 group-hover:text-skeptic-600"
-        >
+        > */}
           <span>
-            Illustrated, Designed & Built
-            <br />
-            by Nithin S
+            Copyright {new Date().getFullYear()}
           </span>
-          <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-        </Link>
+          {/* <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" /> */}
+        {/* </Link> */}
         <Link
           href="https://nithin1729s.vercel.app/"
           rel="noreferrer noopener"

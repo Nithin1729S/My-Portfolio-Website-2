@@ -38,7 +38,7 @@ const Footer = () => {
               href="/"
               className="text-base flex gap-x-1 hover:gap-x-2 transition-all items-center font-light underline text-customBlue"
             >
-              <span>Visit my portfolio</span>
+              <span>Back to Home</span>
               <span>&rarr;</span>
             </a>
           </div>
