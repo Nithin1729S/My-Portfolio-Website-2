@@ -64,7 +64,7 @@ export async function POST(request: Request) {
       await redis.connect();
     } catch (error) {
       return NextResponse.json(
-        { error: "I'm a bit busy right now. Let's talk later." },
+        { error: "I'm a bit occupied right now. Let's talk later." },
         { 
           status: 503,
           headers: {
