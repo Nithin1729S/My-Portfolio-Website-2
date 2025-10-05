@@ -28,7 +28,11 @@ Visit the live site: [https://nithins.vercel.app](https://nithins.vercel.app/)
 
 ## Rate limiting using Redis
 
-<img width="784" height="823" alt="pako_eNpdk1tv2zAMhf8KoacNSAs7idPYwDa0SS_pHW32sDnFoMiMLcyRMknuLch_Hy3XnTs_OfF3eEgeacuEzpAlbFXqJ1Fw42A-XSig5zCdKaHXUuVweDuDO_xToXUPsLf3FY7Syc3dPUwKFL8fGvyIPsAJl6UHJukdusooGAYDONFmKbMMVRe95dZ6dJpOtFIoHDhNLpm0hDXg1APHW_8viAaTWoGthEBrV1X5bdegx3XNa-0FJ615RO" src="https://github.com/user-attachments/assets/f2d28045-0b10-4c33-b1aa-ddf32b7daee8" />
+<img width="784" height="1258" alt="pako_eNpdk11v2jAUhv_Kka8BJRDIh7RNLZSOtmyIsostQZNxDom1xGaO05Yi_vuchKB0ubKd5z3v-bBPhMkYSUD2mXxlKVUaNrNIgPluwoVgMucigZvVAtb4t8RCb6Hf_wy34fT7-hmmKbI_2wa_NT9gTnlWA9NwjbpUAhxrBHOpdjyOUXTRFS2KGp2FUykEMg1aGpeYFwZrwFkN3J3qU2ANxqWAomQMi2JfZl_ODXpXxfwma8G8NR8b82" src="https://github.com/user-attachments/assets/35aad8c1-92c4-450d-a182-6cc551f1d204" />
+
+
+<img width="686" height="164" alt="pako_eNo9UE1vgzAM_SuWT5tEqwCjhRx6aQ_TpK3StNNKD6G4gAQJMom2rup_X0K1-eRnv_f8ccWTqQklnnvzdWoVW_jYlRp8TK5qWI0tlLhlo-HFVPCwU11_gXeayD6WeCeGeDs8kxdXpCzMbHZ6Ag-EkEIcYbHYwP6wH21ntOq9BQcLOBmnLfEEhqE3DbhJNXS825KuS40RNtzVKC07inAgHlSAeA2kEm1LA5UofVrTWbnehq1uXjYq_W" src="https://github.com/user-attachments/assets/16ad51fe-ecfe-4ebe-b9ec-de0abb16cf02" />
+
 
 ## Environment Variables
 
