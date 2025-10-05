@@ -22,6 +22,14 @@ Visit the live site: [https://nithins.vercel.app](https://nithins.vercel.app/)
 - Redis
 - Google Gemini API
 
+## High Level Design of Chat bot
+
+  <img width="647" height="894" alt="pako_eNpd0ltv2jAUAOC_Yp1nQJiQQvIwiYZeWLW1gvWhS_pgJQdizZfUdta1iP9ex0C6LU-O_Z2b7D2UukJIYSv0a1kz48iPZaGI_xb5o0VD3FuDlki0lu3wmQyHX8hlntVY_iKNQckqJAZto5VF-3yMvPSKPPmoDmf5Gl1rFBG6ZKK3f9PvOshlvkFVefHSonXEaeLr_0bj6REvA7vyrNsmZdeEJdn9enPKdhXA9X9gjRW3xDCHQ8Eldy" src="https://github.com/user-attachments/assets/3a7ecc6e-7110-4a42-89f8-b0f511d96135" />
+
+## Rate limiting using Redis
+
+<img width="784" height="823" alt="pako_eNpdk1tv2zAMhf8KoacNSAs7idPYwDa0SS_pHW32sDnFoMiMLcyRMknuLch_Hy3XnTs_OfF3eEgeacuEzpAlbFXqJ1Fw42A-XSig5zCdKaHXUuVweDuDO_xToXUPsLf3FY7Syc3dPUwKFL8fGvyIPsAJl6UHJukdusooGAYDONFmKbMMVRe95dZ6dJpOtFIoHDhNLpm0hDXg1APHW_8viAaTWoGthEBrV1X5bdegx3XNa-0FJ615RO" src="https://github.com/user-attachments/assets/f2d28045-0b10-4c33-b1aa-ddf32b7daee8" />
+
 ## Environment Variables
 
 Create a `.env` file in the root directory with:
