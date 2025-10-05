@@ -6,7 +6,7 @@ const redis = createClient({
 });
 
 const GEMINI_API_KEY = process.env.GOOGLE_GEMINI_API_TOKEN;
-const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
+const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent";
 
 // List of allowed domains
 const ALLOWED_ORIGINS = ['https://nithins.vercel.app', 'https://nithin-steel.vercel.app' , 'https://nithin-nithin1729s-projects.vercel.app' , 'https://nithin-git-master-nithin1729s-projects.vercel.app' ];
