@@ -30,8 +30,7 @@ Visit the live site: [https://nithins.vercel.app](https://nithins.vercel.app/)
 
 <img width="784" height="1258" alt="pako_eNpdk11v2jAUhv_Kka8BJRDIh7RNLZSOtmyIsostQZNxDom1xGaO05Yi_vuchKB0ubKd5z3v-bBPhMkYSUD2mXxlKVUaNrNIgPluwoVgMucigZvVAtb4t8RCb6Hf_wy34fT7-hmmKbI_2wa_NT9gTnlWA9NwjbpUAhxrBHOpdjyOUXTRFS2KGp2FUykEMg1aGpeYFwZrwFkN3J3qU2ANxqWAomQMi2JfZl_ODXpXxfwma8G8NR8b82" src="https://github.com/user-attachments/assets/35aad8c1-92c4-450d-a182-6cc551f1d204" />
 
-
-<img width="686" height="164" alt="pako_eNo9UE1vgzAM_SuWT5tEqwCjhRx6aQ_TpK3StNNKD6G4gAQJMom2rup_X0K1-eRnv_f8ccWTqQklnnvzdWoVW_jYlRp8TK5qWI0tlLhlo-HFVPCwU11_gXeayD6WeCeGeDs8kxdXpCzMbHZ6Ag-EkEIcYbHYwP6wH21ntOq9BQcLOBmnLfEEhqE3DbhJNXS825KuS40RNtzVKC07inAgHlSAeA2kEm1LA5UofVrTWbnehq1uXjYq_W" src="https://github.com/user-attachments/assets/16ad51fe-ecfe-4ebe-b9ec-de0abb16cf02" />
+<img width="686" height="164" alt="pako_eNo9UMtOwzAQ_BVrTyClle02Te0DF3oAJOACF5oe3GbzkBK72tiCEvXfcRLRPXnWM7OzO8DJFQgaytZ9n2pDnn3scsti9eFYkTnXLIdHcpa9uCO725mmvbDPc2E83ucwM8d62z9hVB_ReDbRKdieRcC55vzAFosH9r5_tifCDq3v2Uif2S5Yj3SYvdAWuYUEKmoK0J4CJtAhdWaEMIykHHwdTXLQ8VlgaULrxyjXKDsb--Vc968kF6" src="https://github.com/user-attachments/assets/9c8acdf4-e473-42aa-9316-822b3c404463" />
 
 
 ## Environment Variables
