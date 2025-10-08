@@ -11,6 +11,6 @@ export async function GET() {
   } catch (e) {
     return NextResponse.json({ error: e instanceof Error ? e.message : String(e) }, { status: 500 });
   } finally {
-    redis.disconnect();
+    await redis.disconnect();
   }
 }
