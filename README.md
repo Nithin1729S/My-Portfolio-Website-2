@@ -22,15 +22,36 @@ Visit the live site: [https://nithins.vercel.app](https://nithins.vercel.app/)
 - Redis
 - Google Gemini API
 
-## High Level Design of Chat bot
+<h2 align="center">High Level Design of Chat bot</h2>
 
-  <img width="647" height="894" alt="pako_eNpd0ltv2jAUAOC_Yp1nQJiQQvIwiYZeWLW1gvWhS_pgJQdizZfUdta1iP9ex0C6LU-O_Z2b7D2UukJIYSv0a1kz48iPZaGI_xb5o0VD3FuDlki0lu3wmQyHX8hlntVY_iKNQckqJAZto5VF-3yMvPSKPPmoDmf5Gl1rFBG6ZKK3f9PvOshlvkFVefHSonXEaeLr_0bj6REvA7vyrNsmZdeEJdn9enPKdhXA9X9gjRW3xDCHQ8Eldy" src="https://github.com/user-attachments/assets/3a7ecc6e-7110-4a42-89f8-b0f511d96135" />
+<p align="center">
+  <img 
+    src="https://github.com/user-attachments/assets/de9800c7-15c7-42b8-bc32-4933dbad5164" 
+    alt="High Level Design of Chat bot"
+  />
+</p>
 
-## Rate limiting using Redis
+<br/>
 
-<img width="784" height="1258" alt="pako_eNpdk11v2jAUhv_Kka8BJRDIh7RNLZSOtmyIsostQZNxDom1xGaO05Yi_vuchKB0ubKd5z3v-bBPhMkYSUD2mXxlKVUaNrNIgPluwoVgMucigZvVAtb4t8RCb6Hf_wy34fT7-hmmKbI_2wa_NT9gTnlWA9NwjbpUAhxrBHOpdjyOUXTRFS2KGp2FUykEMg1aGpeYFwZrwFkN3J3qU2ANxqWAomQMi2JfZl_ODXpXxfwma8G8NR8b82" src="https://github.com/user-attachments/assets/35aad8c1-92c4-450d-a182-6cc551f1d204" />
+<h2 align="center">Rate limiting using Redis</h2>
 
-<img width="686" height="164" alt="pako_eNo9UMtOwzAQ_BVrTyClle02Te0DF3oAJOACF5oe3GbzkBK72tiCEvXfcRLRPXnWM7OzO8DJFQgaytZ9n2pDnn3scsti9eFYkTnXLIdHcpa9uCO725mmvbDPc2E83ucwM8d62z9hVB_ReDbRKdieRcC55vzAFosH9r5_tifCDq3v2Uif2S5Yj3SYvdAWuYUEKmoK0J4CJtAhdWaEMIykHHwdTXLQ8VlgaULrxyjXKDsb--Vc968kF6" src="https://github.com/user-attachments/assets/9c8acdf4-e473-42aa-9316-822b3c404463" />
+<p align="center">
+  <img 
+    src="https://github.com/user-attachments/assets/6b68a1f7-87a2-4baa-9ade-bbf160fd8269" 
+    alt="Rate limiting using Redis"
+  />
+</p>
+
+<br/>
+
+<p align="center">
+  <img 
+    width="686" 
+    height="164"
+    src="https://github.com/user-attachments/assets/9c8acdf4-e473-42aa-9316-822b3c404463"
+    alt="Redis rate limit low level"
+  />
+</p>
 
 
 ## Environment Variables
