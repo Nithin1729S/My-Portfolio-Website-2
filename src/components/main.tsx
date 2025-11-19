@@ -84,7 +84,7 @@ const education = [
     location: "Mangalore, India",
     date: {
       start: "Nov 2022",
-      end: "Aug 2026",
+      end: "May 2026",
     },
     description: "",
   },
