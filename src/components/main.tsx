@@ -86,7 +86,7 @@ const education = [
       start: "Nov 2022",
       end: "May 2026",
     },
-    description: "",
+    description: null,
   },
   // {
   //   title: "National Institute of Technology Karnataka",
@@ -279,9 +279,13 @@ export default function Main() {
                   </p>
                 </aside>
               </div>
-              <div className="mt-3 text-skeptic-950">
+              {
+                exp.description && (
+                  <div className="mt-3 text-skeptic-950">
                 <p className="text-sm">{exp.description}</p>
               </div>
+                )
+              }
             </li>
           ))}
         </ul>
@@ -375,17 +379,9 @@ export default function Main() {
       ></section>
 
       <footer className="flex flex-col items-start justify-between gap-y-6 sm:flex-row sm:items-end">
-        {/* <Link
-          href="https://github.com/Nithin1729S"
-          rel="noreferrer noopener"
-          target="_blank"
-          className="group text-skeptic-800 group-hover:text-skeptic-600"
-        > */}
           <span>
             Copyright {new Date().getFullYear()}
           </span>
-          {/* <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" /> */}
-        {/* </Link> */}
         <Link
           href="https://nithin1729s.vercel.app/"
           rel="noreferrer noopener"
