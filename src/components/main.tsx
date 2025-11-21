@@ -1,11 +1,6 @@
 "use client";
 import React from "react";
-
 import Link from "next/link";
-import Image from "next/image";
-
-import { cn } from "@/lib/utils";
-
 import imageStyleTransfer from "@/assets/projects/imageStyleTransfer.png";
 import airesume from "@/assets/projects/ai-resume.png";
 import sudoku from "@/assets/projects/sudoku.png";
@@ -13,6 +8,9 @@ import ds from "@/assets/projects/ds.png";
 import Arrow from "@/assets/icons/arrow.svg";
 import Chat from "@/components/chat";
 import ButtonGroup from "@/components/button-group";
+import ExperienceSection from "./experience";
+import EducationSection from "./education";
+import ProjectsSection from "./projects";
 
 const experience = [
   {
@@ -88,17 +86,6 @@ const education = [
     },
     description: null,
   },
-  // {
-  //   title: "National Institute of Technology Karnataka",
-  //   company: "Minor in Machine Learning",
-  //   link: "halelabnitk.github.io",
-  //   location: "Mangalore, India",
-  //   date: {
-  //     start: "Aug 2023",
-  //     end: "Aug 2026",
-  //   },
-  //   description: "",
-  // },
 ];
 
 const projects = [
@@ -163,225 +150,12 @@ export default function Main() {
         <ButtonGroup />
       </section>
 
-      <section
-        id="experience"
-        className="mb-24 scroll-mt-16"
-        aria-label="Professional work experience"
-      >
-        <h2 className="text-2xl font-bold tracking-tight">Experience</h2>
-        <ul className="ml-1 mt-5 flex flex-col text-skeptic-900">
-          {experience.map((exp, index) => (
-            <li
-              className={cn(
-                "relative ml-3 pl-5 before:absolute before:-left-2 before:top-2 before:h-full before:w-0.5 before:rounded-full before:bg-slate-300 before:content-[''] after:absolute after:-left-[0.93rem] after:top-1 after:size-4 after:rounded-full after:bg-slate-300 after:content-['']",
-                index !== experience.length - 1 && "pb-10",
-                index === 10 && "after:bg-skeptic-700",
-              )}
-              key={index}
-            >
-              <div className="flex flex-col-reverse justify-between gap-y-2 sm:flex-row">
-                <h3 className="relative flex items-start gap-3 leading-snug">
-                  <div className="flex-shrink-0 ">
-                    <Image
-                      src={exp.logo}
-                      alt={`${exp.company} logo`}
-                      width={38} // fixed
-                      height={28} // fixed
-                      className="rounded object-contain"
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-lg font-bold leading-none tracking-tight">
-                      {exp.title}
-                    </span>
-                    <Link
-                      href={exp.link}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="group font-medium tracking-tight hover:text-skeptic-700"
-                    >
-                      {exp.company}
-                      <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                    </Link>
-                  </div>
-                </h3>
-                <aside className="flex-shrink-0">
-                  <p
-                    aria-label={`Worked from ${exp.date.start} to ${exp.date.end}`}
-                    className="text-xs font-semibold text-skeptic-800 sm:text-end sm:text-sm"
-                  >
-                    {exp.date.start} &mdash; {exp.date.end}
-                  </p>
-                  <p
-                    aria-label={`Located in ${exp.location}`}
-                    className="text-xs text-skeptic-800 sm:text-end sm:text-sm"
-                  >
-                    {exp.location}
-                  </p>
-                </aside>
-              </div>
-              <div className="mt-3 text-skeptic-950">
-                <p className="whitespace-pre-line text-sm">{exp.description}</p>
-                <ul
-                  className="mr-14 mt-3 flex flex-wrap gap-1.5 tracking-wide sm:gap-2"
-                  aria-label="Technology stack"
-                >
-                  {exp.skills.map((skill) => (
-                    <li
-                      className="rounded-full bg-skeptic-700 px-3 py-1 text-xs text-skeptic-50"
-                      key={skill}
-                    >
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section
-        id="education"
-        className="mb-24 scroll-mt-16"
-        aria-label="Education"
-      >
-        <h2 className="text-2xl font-bold tracking-tight">Education</h2>
-        <ul className="ml-1 mt-5 flex flex-col text-skeptic-900">
-          {education.map((exp, index) => (
-            <li
-              className={cn(
-                "relative ml-3 pl-5 before:absolute before:-left-2 before:top-2 before:h-full before:w-0.5 before:rounded-full before:bg-slate-300 before:content-[''] after:absolute after:-left-[0.93rem] after:top-1 after:size-4 after:rounded-full after:bg-slate-300 after:content-['']",
-                index !== education.length - 1 && "pb-10",
-                index === 0 && "after:bg-skeptic-700",
-                index === 1 && "after:bg-skeptic-700",
-              )}
-              key={index}
-            >
-              <div className="flex flex-col-reverse justify-between gap-y-2 sm:flex-row">
-                <h3 className="relative flex flex-col leading-snug">
-                  <span className="pb-1 text-lg font-bold leading-none tracking-tight">
-                    {exp.title}
-                  </span>
-                  {exp.company}
-                </h3>
-                <aside className="flex-shrink-0">
-                  <p
-                    aria-label={`Worked from ${exp.date.start} to ${exp.date.end}`}
-                    className="text-xs font-semibold text-skeptic-800 sm:text-end sm:text-sm"
-                  >
-                    {exp.date.start} &mdash; {exp.date.end}
-                  </p>
-                  <p
-                    aria-label={`Located in ${exp.location}`}
-                    className="text-xs text-skeptic-800 sm:text-end sm:text-sm"
-                  >
-                    {exp.location}
-                  </p>
-                </aside>
-              </div>
-              {
-                exp.description && (
-                  <div className="mt-3 text-skeptic-950">
-                <p className="text-sm">{exp.description}</p>
-              </div>
-                )
-              }
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section
-        id="projects"
-        className="mb-24 scroll-mt-16"
-        aria-label="Projects I've worked on"
-      >
-        <h2 className="text-2xl font-bold tracking-tight">
-          Some Things I&apos;ve Built
-        </h2>
-        <ul className="mt-8 flex flex-col gap-14 text-skeptic-900">
-          {projects.slice(0, 4).map((project) => (
-            <li
-              className="group relative z-0 flex flex-col gap-4 sm:flex-row"
-              key={project.title}
-            >
-              <div
-                className="absolute inset-0 -z-10 hidden rounded-md transition-all motion-reduce:transition-none lg:block lg:group-hover:-inset-5 lg:group-hover:bg-skeptic-200"
-                aria-hidden="true"
-              />
-              <div className="relative size-fit flex-shrink-0 rounded">
-                {project.wip && (
-                  <div
-                    className="absolute inset-0 z-10 flex size-full items-center justify-center rounded bg-opacity-50 bg-wip-overlay text-xl font-bold tracking-wider text-skeptic-50 transition-all lg:group-hover:opacity-0"
-                    aria-label="Work in progress"
-                  >
-                    &mdash; WIP &mdash;
-                  </div>
-                )}
-                <Image
-                  src={project.thumbnail}
-                  alt={project.title}
-                  width={180}
-                  quality={100}
-                  className="relative rounded border border-skeptic-400"
-                />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold leading-none">
-                  <Link
-                    href={project.link}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <span>{project.title}</span>
-                    <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[4px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                    <span
-                      className="absolute -inset-x-4 -inset-y-2.5 z-20 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                      aria-hidden="true"
-                    />
-                  </Link>
-                </h3>
-                <div className="mt-3 text-skeptic-950">
-                  <p className="text-sm">{project.description}</p>
-                  <ul
-                    className="mr-14 mt-3 flex flex-wrap gap-1.5 tracking-wide sm:gap-2"
-                    aria-label="Technology stack"
-                  >
-                    {project.skills.map((skill) => (
-                      <li
-                        className="rounded-full bg-skeptic-700 px-3 py-1 text-xs text-skeptic-50"
-                        key={skill}
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <div className="mt-10 flex justify-center">
-          <Link
-            href="/projects"
-            className="group flex items-center text-sm  text-skeptic-900 hover:text-skeptic-700"
-          >
-            Show More
-            <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-          </Link>
-        </div>
-      </section>
-
-      <section
-        id="blog"
-        className="mb-24 scroll-mt-16"
-        aria-label="Recent blog posts"
-      ></section>
+      <ExperienceSection experience={experience} />
+      <EducationSection education={education} />
+      <ProjectsSection projects={projects} />
 
       <footer className="flex flex-col items-start justify-between gap-y-6 sm:flex-row sm:items-end">
-          <span>
-            Copyright {new Date().getFullYear()}
-          </span>
+        <span>Copyright {new Date().getFullYear()}</span>
         <Link
           href="https://nithin1729s.vercel.app/"
           rel="noreferrer noopener"
