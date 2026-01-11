@@ -142,11 +142,11 @@ export default function Main() {
           <strong>Google India</strong> and will be joining as a{" "}
           <strong>Full-Time Engineer</strong> in 2026.
         </p>
-        <p className="mt-3 text-skeptic-900">
+        {/* <p className="mt-3 text-skeptic-900">
           Comfortable with C, C++, Python. Into building real solutions in
           Software Dev, ML/DL, NLP, Blockchain, and Data Analytics. Love
           tackling challenges that actually get stuff done.
-        </p>
+        </p> */}
         <ButtonGroup />
       </section>
 
