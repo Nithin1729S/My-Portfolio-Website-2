@@ -1,6 +1,14 @@
 "use client";
 import ProjectCard from "./ProjectCard";
 const projects = [
+      {
+      title: "Llama2 Inference Runtime (From Scratch)",
+      description: "Zero-dependency C++ implementation of Llama2 transformer inference with KV cache, RoPE, GQA, and custom BPE tokenizer",
+      thumbnail: "/assets/projects/llamaInference.png",
+      link: "https://github.com/Nithin1729S/llama-infer-cpp",
+      skills: ["C++", "Transformers", "Protocol Buffers", "Tokenization", "Systems Programming"],
+      wip: false
+    },
     {
       title: "Image Style Transfer Using CNNs",
       description: "A Flask application that uses neural style transfer to blend content and style images effortlessly",

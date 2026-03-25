@@ -14,6 +14,27 @@ import ProjectsSection from "./projects";
 
 const experience = [
   {
+    title: "Software Engineer",
+    logo: "assets/experience/google1.svg",
+    company: "Google India",
+    link: "https://drive.google.com/file/d/14Zy0gxOhisvAHLqrwU6NmIosM91Zi5Zh/view?usp=sharing",
+    location: "Bengaluru, India",
+    date: {
+      start: "June 2026",
+      end: "Present",
+    },
+    description:
+      "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to relevant ads, and built a scalable data pipeline using optimized SQL for training data extraction. \n \n Integrated the model into low-latency ads serving stack and validated its effectiveness by deploying it in 1% Search Traffic, resulting in positive click-through rates.",
+    skills: [
+      "C++",
+      "Python",
+      "SQL",
+      "Protocol Buffers",
+      "Large Language Models",
+      "Pipeline Design",
+    ],
+  },
+  {
     title: "Software Engineer Intern",
     logo: "assets/experience/google1.svg",
     company: "Google India",
@@ -84,7 +105,7 @@ const education = [
       start: "Nov 2022",
       end: "May 2026",
     },
-    description: null,
+    description: "Grade: 9.39/10",
   },
 ];
 
@@ -134,13 +155,10 @@ export default function Main() {
       <section id="about" className="mb-24 scroll-mt-16" aria-label="About me">
         <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
         <p className="mt-5 text-skeptic-900">
-          I’m a final-year Information Technology undergrad at{" "}
-          <strong>NITK Surathkal</strong> (2026 batch).
+          I’m a Software Engineer at <strong>Google India</strong> working on local search ads.
         </p>
         <p className="mt-3 text-skeptic-900">
-          I recently wrapped up my Software Engineering Internship at{" "}
-          <strong>Google India</strong> and will be joining as a{" "}
-          <strong>Full-Time Engineer</strong> in 2026.
+          I graduated in 2026 with a B.Tech in Information Technology from <strong>NITK Surathkal</strong>.
         </p>
         {/* <p className="mt-3 text-skeptic-900">
           Comfortable with C, C++, Python. Into building real solutions in
