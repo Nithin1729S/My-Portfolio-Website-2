@@ -1,17 +1,13 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import imageStyleTransfer from "@/assets/projects/imageStyleTransfer.png";
-import airesume from "@/assets/projects/ai-resume.png";
-import sudoku from "@/assets/projects/sudoku.png";
-import ds from "@/assets/projects/ds.png";
 import Arrow from "@/assets/icons/arrow.svg";
 import Chat from "@/components/chat";
 import ButtonGroup from "@/components/button-group";
 import ExperienceSection from "./experience";
 import EducationSection from "./education";
 import ProjectsSection from "./projects";
-
+import { projects } from "../app/projects/ProjectsList";
 const experience = [
   {
     title: "Software Engineer",
@@ -106,44 +102,6 @@ const education = [
       end: "May 2026",
     },
     description: "Grade: 9.39/10",
-  },
-];
-
-const projects = [
-  {
-    title: "Image Style Transfer Using CNNs",
-    link: "https://github.com/Nithin1729S/Image-Style-Transfer-Using-CNNs.git",
-    thumbnail: imageStyleTransfer,
-    description:
-      "A Flask application that uses neural style transfer to blend content and style images effortlessly",
-    skills: ["Pytorch", "CNN", "Flask", "Python"],
-    wip: false,
-  },
-  {
-    title: "AI Resume Insights",
-    link: "https://github.com/Nithin1729S/AI-Resume-Insights",
-    thumbnail: airesume,
-    description:
-      "An AI-driven resume feedback system built with Langchain and Gemini API.",
-    skills: ["Langchain", "Gemini API", "Next.js", "Django"],
-    wip: false,
-  },
-  {
-    title: "Neuro Sudoku",
-    link: "https://github.com/Nithin1729S/Neuro-Sudoku",
-    thumbnail: sudoku,
-    description: "A full-stack web application for real-time Sudoku solving.",
-    skills: ["ViT", "Next.js", "FastAPI", "TypeScript"],
-    wip: false,
-  },
-  {
-    title: "Distributed P2P Database",
-    link: "https://github.com/Nithin1729S/Distributed-DB",
-    thumbnail: ds,
-    description:
-      "This project is a distributed file storage system implemented in Go.",
-    skills: ["Golang", "TCP", "AES-CTR", "CAS"],
-    wip: false,
   },
 ];
 

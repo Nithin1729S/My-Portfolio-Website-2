@@ -1,6 +1,6 @@
 "use client";
 import ProjectCard from "./ProjectCard";
-const projects = [
+export const projects = [
       {
       title: "Llama2 Inference Runtime (From Scratch)",
       description: "Zero-dependency C++ implementation of Llama2 transformer inference with KV cache, RoPE, GQA, and custom BPE tokenizer",

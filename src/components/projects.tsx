@@ -7,7 +7,7 @@ import Arrow from "@/assets/icons/arrow.svg";
 interface ProjectItem {
   title: string;
   link: string;
-  thumbnail: StaticImageData;
+  thumbnail: string;
   description: string;
   skills: string[];
   wip: boolean;
@@ -51,6 +51,7 @@ export default function ProjectsSection({ projects }: ProjectsSectionProps) {
                 alt={project.title}
                 width={180}
                 quality={100}
+                height={120}
                 className="relative rounded border border-skeptic-400"
               />
             </div>
