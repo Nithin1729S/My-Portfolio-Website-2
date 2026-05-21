@@ -36,7 +36,7 @@ const experience = [
       end: "August 2025",
     },
     description:
-      "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to relevant ads, and built a scalable data pipeline using optimized SQL for training data extraction. \n \n Integrated the model into production ads system and validated its effectiveness by deploying it on Search Traffic, resulting in positive click-through rates.",
+      "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to relevant ads, and built a scalable data pipeline using optimized SQL for training data extraction. \n \n Integrated the model into production ads system and validated its effectiveness by deploying it on Search Traffic, resulting in positive click-through rates. \n \n Offered a full-time return offer as Software Engineer at Google.",
     skills: [
       "C++",
       "Python",
