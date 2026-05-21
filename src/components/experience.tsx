@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Arrow from "@/assets/icons/arrow.svg";
+import { cn } from "@/lib/utils";
 
 interface DateRange {
   start: string;
@@ -36,10 +37,12 @@ export default function ExperienceSection({
       <ul className="ml-1 mt-5 flex flex-col text-skeptic-900">
         {experience.map((exp, index) => (
           <li
-            className={`relative ml-3 pl-5 before:absolute before:-left-2 before:top-2 before:h-full before:w-0.5 before:rounded-full before:bg-slate-300 before:content-[''] after:absolute after:-left-[0.93rem] after:top-1 after:size-4 after:rounded-full after:bg-slate-300 after:content-[''] ${
-              index !== experience.length - 1 ? "pb-10" : ""
-            } ${index === 0 ? "after:bg-skeptic-700" : ""}`}
             key={index}
+            className={cn(
+              "relative ml-3 pl-5 before:absolute before:-left-2 before:top-2 before:h-full before:w-0.5 before:rounded-full before:bg-slate-300 before:content-[''] after:absolute after:-left-[0.93rem] after:top-1 after:size-4 after:rounded-full after:bg-slate-300 after:content-['']",
+              index !== experience.length - 1 && "pb-10",
+              index === 0 && "after:bg-skeptic-700",
+            )}
           >
             <div className="flex flex-col-reverse justify-between gap-y-2 sm:flex-row">
               <h3 className="relative flex items-start gap-3 leading-snug">

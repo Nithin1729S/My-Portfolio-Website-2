@@ -33,8 +33,8 @@ export default function EducationSection({ education }: EducationSectionProps) {
             className={cn(
               "relative ml-3 pl-5 before:absolute before:-left-2 before:top-2 before:h-full before:w-0.5 before:rounded-full before:bg-slate-300 before:content-[''] after:absolute after:-left-[0.93rem] after:top-1 after:size-4 after:rounded-full after:bg-slate-300 after:content-['']",
               index !== education.length - 1 && "pb-10",
-              index === 0 && "after:bg-skeptic-700",
-              index === 1 && "after:bg-skeptic-700",
+              // index === 0 && "after:bg-skeptic-700",
+              // index === 1 && "after:bg-skeptic-700",
             )}
             key={index}
           >
