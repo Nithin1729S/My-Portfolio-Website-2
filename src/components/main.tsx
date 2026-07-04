@@ -13,7 +13,7 @@ const experience = [
     title: "Software Engineer II, Infrastructure",
     logo: "assets/experience/google1.svg",
     company: "Google India",
-    link: "https://drive.google.com/file/d/14Zy0gxOhisvAHLqrwU6NmIosM91Zi5Zh/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/11heKWsIIz6KSGnqn1flCWJnZ48dOgFCR/view",
     location: "Bengaluru, India",
     date: {
       start: "June 2026",
