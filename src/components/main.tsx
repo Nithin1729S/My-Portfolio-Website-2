@@ -22,7 +22,10 @@ const experience = [
     description:
       "Building infra and tooling to enable seamless logging and analysis for  Search Ads.",
     skills: [
-      
+      "C++",
+      "SQL",
+      "Protocol Buffers",
+      "Pipeline Design",
     ],
   },
   {
