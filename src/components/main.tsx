@@ -13,14 +13,14 @@ const experience = [
     title: "Software Engineer II, Infrastructure",
     logo: "assets/experience/google1.svg",
     company: "Google India",
-    link: "https://drive.google.com/file/d/14Zy0gxOhisvAHLqrwU6NmIosM91Zi5Zh/view?usp=sharing",
+    link: "https://drive.google.com/file/d/14Zy0gxOhisvAHLqrwU6NmIosM91Zi5Zh/view?usp=drive_link",
     location: "Bengaluru, India",
     date: {
       start: "June 2026",
       end: "Present",
     },
     description:
-      "",
+      "Building infra and tooling to enable seamless logging and analysis for  Search Ads.",
     skills: [
       
     ],
@@ -36,7 +36,8 @@ const experience = [
       end: "August 2025",
     },
     description:
-      "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to relevant ads, and built a scalable data pipeline using optimized SQL for training data extraction. \n \n Integrated the model into production ads system and validated its effectiveness by deploying it on Search Traffic, resulting in positive click-through rates. \n \n Offered a full-time return offer as Software Engineer at Google.",
+    "Worked on displaying awesome ads on local queries.",
+      // "Fine-tuned an LLM with distillation techniques to improve local ad targeting by matching user queries to relevant ads, and built a scalable data pipeline using optimized SQL for training data extraction. \n \n Integrated the model into production ads system and validated its effectiveness by deploying it on Search Traffic, resulting in positive click-through rates. \n \n Offered a full-time return offer as Software Engineer at Google.",
     skills: [
       "C++",
       "Python",
